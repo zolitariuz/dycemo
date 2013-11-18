@@ -23,19 +23,35 @@
 		<![endif]-->
 		<div class="container clearfix">
 
-		<header>
+		<header class="clearfix">
 
-			<div id="logo">
-				<a href="index.html">
-					<img src="<?php echo THEMEPATH; ?>images/logo.png" border="0" />
-				</a>
-			</div><!--Termina Logo-->
+			<div class="width">
 
-			<nav>
-				<a href="index.html" class="selected">Inicio</a>
-				<a href="enventa.php">En venta</a>
-				<a href="nosotros.html">Nosotros</a>
-				<a href="contacto.php">Contacto</a>
-			</nav>
+				<h1>
+					<a href="index.html">
+						<img src="<?php echo THEMEPATH; ?>images/logo.png" alt="Dycemo" />
+					</a>
+				</h1>
+
+				<nav class="menu">
+					<ul class="clearfix">
+						<li>
+							<a href="">Inicio</a>
+						</li>
+
+						<li>
+							<a href="">En vent</a>
+						</li>
+
+						<li>
+							<a href="">Nosotros</a>
+						</li>
+
+						<li>
+							<a href="">Contacto</a>
+						</li>
+					</ul>
+				</nav>
+			</div><!-- width -->
 
 		</header>
