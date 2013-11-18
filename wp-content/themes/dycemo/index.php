@@ -1,45 +1,56 @@
-	<?php get_header(); ?>
+<?php get_header(); ?>
 
-	<div id="lateral_izquierdo">
+	<div class="width">
 
-			<div id="parrafo">
+		<h2 class="texto-centrado">Los Pinos 6</h2>
 
-				<h1>DYCEMO</h1>
-				<p>En Dycemo nos dedicamos a la planeación, arquitectura y construcción de viviendas residenciales en México D.F. Buscamos diseñar espacios familiares dentro de la ciudad que sean tranquilos, seguros y cómodos.  </p>
+		<div class="slider cycle-slideshow width">
 
-			</div><!--Termina Parrafo-->
+			<img src="<?php echo THEMEPATH; ?>images/slide-pinos-01.jpg" alt="">
+			<img src="<?php echo THEMEPATH; ?>images/slide-pinos-02.jpg" alt="">
+			<img src="<?php echo THEMEPATH; ?>images/slide-pinos-03.jpg" alt="">
 
-			 <img src="<?php echo THEMEPATH; ?>images/foto_intro.jpg" border="0" />
+		</div><!-- slider -->
 
-			 <h6>Tenemos más de tres décadas construyendo residencias en la Ciudad de México. Te invitamos a conocer <a href="nosotros.html" target="_self" border="0">nuestro trabajo. </a></h6>
+		<div class="tercio noticia left">
 
-			 <hr color="#EAEAEA"/>
+			<img src="<?php echo THEMEPATH; ?>images/noticia-01.jpg" alt="">
 
-			 <div id="botones">
-				<img src="<?php echo THEMEPATH; ?>images/botones_inicio.png" border="0" usemap="#Map"/>
+			<div class="caja">
+				<h3>Lorem Ipsum</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit tollenda est atque extrahenda radicitus duo reges constructio interrete cur igitur cum de re conveniat non malumus usitate.Lorem ipsum dolor sit amet consectetur adipiscing elit tollenda est atque extrahenda radicitus duo reges constructio interrete cur igitur cum de re conveniat non malumus usitate.</p>
+			</div><!-- caja -->
 
-				<map name="Map" id="Map">
-					 <area shape="rect" coords="1,-1,269,120" href="contacto.php" target="_self" />
-					 <area shape="rect" coords="279,2,547,129" href="http://dycemo.blogspot.mx/" target="_blank" />
-				</map>
-			 </div><!--Termina Botones Contactanos y Tips de Interiorismo-->
 
-		 	<div id="botones">
-				 <img src="<?php echo THEMEPATH; ?>images/btns_redes.png" border="0" usemap="#Map2" />
-				 <map name="Map2" id="Map2">
-					 <area shape="circle" coords="12,13,13" href="https://www.facebook.com/pages/Dycemo/200394369974970" target="_blank" title="Síguenos en Facebook" />
-					 <area shape="circle" coords="48,12,13" href="http://dycemo.blogspot.mx/" target="_blank" title="Tips y decoración en nuestro blog" />
-					 <area shape="circle" coords="83,13,11" href="https://twitter.com/#!/CDycemo" target="_blank" />
-				 </map>
-			 </div><!--Termina Botones Redes-->
+		</div><!-- tercio -->
 
-		</div><!--Termina Lateral Izquierdo-->
+		<div class="tercio noticia left">
 
-		<div id="lateral_derecho">
-			<a href="enventa.php" target="_self" title="Ver condominio en venta">
-				<img src="<?php echo THEMEPATH; ?>images/condominio_venta1.png" border="0" />
-			</a>
-		</div><!--Termina Lateral Derecho-->
+			<img src="<?php echo THEMEPATH; ?>images/noticia-01.jpg" alt="">
 
-	<?php get_sidebar(); ?>
-	<?php get_footer(); ?>
+			<div class="caja">
+				<h3>Lorem Ipsum</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit tollenda est atque extrahenda radicitus duo reges constructio interrete cur igitur cum de re conveniat non malumus usitate.Lorem ipsum dolor sit amet consectetur adipiscing elit tollenda est atque extrahenda radicitus duo reges constructio interrete cur igitur cum de re conveniat non malumus usitate.</p>
+			</div><!-- caja -->
+
+
+		</div><!-- tercio -->
+
+		<form class="tercio forma-cita left caja" action="">
+
+			<h3 class="texto-centrado">Haz una cita</h3>
+
+			<input type="text" name="nombre" value="Nombre">
+			<input type="email" name="email" value="E-mail">
+			<input type="tel" name="celular" value="Celular">
+			<textarea name="mensaje" cols="30" rows="10">Mensaje</textarea>
+			<input type="submit" value="enviar">
+
+		</form><!-- forma-cita -->
+
+	</div><!-- width -->
+
+
+
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>

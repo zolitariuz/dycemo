@@ -1,4 +1,5 @@
-	</div><!--Termina Wrap-->
+
+	</div><!--main -->
 
 	<footer>
 		<div id="footer_wrap">

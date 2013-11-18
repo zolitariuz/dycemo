@@ -27,27 +27,27 @@
 
 			<div class="width">
 
-				<h1>
+				<h1 class="left">
 					<a href="index.html">
 						<img src="<?php echo THEMEPATH; ?>images/logo.png" alt="Dycemo" />
 					</a>
 				</h1>
 
-				<nav class="menu">
+				<nav class="menu right">
 					<ul class="clearfix">
 						<li>
 							<a href="">Inicio</a>
 						</li>
 
 						<li>
-							<a href="">En vent</a>
+							<a href="">En venta</a>
 						</li>
 
 						<li>
 							<a href="">Nosotros</a>
 						</li>
 
-						<li>
+						<li class="last">
 							<a href="">Contacto</a>
 						</li>
 					</ul>
@@ -55,3 +55,5 @@
 			</div><!-- width -->
 
 		</header>
+
+		<div class="main clearfix">
