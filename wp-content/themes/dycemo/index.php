@@ -16,7 +16,7 @@
 
 			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/noticia-01.jpg" alt="">
 
-			<div class="caja">
+			<div class="caja info">
 				<h3>Lorem Ipsum</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit tollenda est atque extrahenda radicitus duo reges constructio interrete cur igitur cum de re conveniat non malumus usitate.Lorem ipsum dolor sit amet consectetur adipiscing elit tollenda est atque extrahenda radicitus duo reges constructio interrete cur igitur cum de re conveniat non malumus usitate.</p>
 			</div><!-- caja -->
