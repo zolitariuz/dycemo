@@ -36,19 +36,19 @@
 				<nav class="menu right">
 					<ul class="clearfix">
 						<li>
-							<a href="">Inicio</a>
+							<a href="<?php echo site_url(); ?>">Inicio</a>
 						</li>
 
 						<li>
-							<a href="">En venta</a>
+							<a href="<?php echo site_url('en-venta'); ?>">En venta</a>
 						</li>
 
 						<li>
-							<a href="">Nosotros</a>
+							<a href="<?php echo site_url('nosotros'); ?>">Nosotros</a>
 						</li>
 
 						<li class="last">
-							<a href="">Contacto</a>
+							<a href="<?php echo site_url('contacto'); ?>">Contacto</a>
 						</li>
 					</ul>
 				</nav>
