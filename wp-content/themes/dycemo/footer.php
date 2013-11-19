@@ -2,8 +2,11 @@
 	</div><!--main -->
 
 	<footer>
-		<div id="footer_wrap">
-			<p>Constuctora Dycemo S.A. de C.V. <br/> Tel.55 56 83 68 00<br/> <a href="https://webmailcluster.perfora.net/xml/webmail/Login;jsessionid=53F6D707087D5CE37CBDFD7301DC2790.TC135a?__reuse=1298991710445" target="_self">WebMail</a></p>
+		<div class="width clearfix">
+			<p class="left">Constuctora Dycemo S.A. de C.V. <br/> Tel.55 56 83 68 00<br/> <a href="https://webmailcluster.perfora.net/xml/webmail/Login;jsessionid=53F6D707087D5CE37CBDFD7301DC2790.TC135a?__reuse=1298991710445" target="_self">WebMail</a></p>
+
+			<a href="#" class="boton right tercio">Haz una cita</a>
+
 		</div><!--Termina Footer Wrap-->
 	</footer>
 
