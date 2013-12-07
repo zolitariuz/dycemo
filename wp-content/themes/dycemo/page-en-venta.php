@@ -2,8 +2,6 @@
 
 	<div class="width">
 
-		<h2 class="texto-centrado">Los Pinos 6</h2>
-
 		<div class="slider cycle-slideshow width">
 
 			<img src="<?php echo THEMEPATH; ?>images/slide-pinos-01.jpg" alt="">
@@ -12,29 +10,47 @@
 
 		</div><!-- slider -->
 
-		<div class="tercio caracteristica left">
+		<div class="quinto caracteristica left">
 
-			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/habitaciones.png" alt="">
+			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/cuartos.png" alt="">
 
 			<div class="info">
 				<h3 class="texto-centrado">4 habitaciones y 4.5 baños</h3>
 			</div><!-- caja -->
 
+		</div><!-- quinto -->
 
-		</div><!-- tercio -->
-
-		<div class="tercio caracteristica left">
+		<div class="quinto caracteristica left">
 
 			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/jardin.png" alt="">
 
 			<div class="info">
-				<h3 class="texto-centrado">Jardines amplios y privados</h3>
+				<h3 class="texto-centrado">196-300m<sup>2</sup> con jardines amplios</h3>
 			</div><!-- caja -->
 
+		</div><!-- quinto -->
 
-		</div><!-- tercio -->
+		<div class="quinto caracteristica left">
 
-		<div class="tercio caracteristica left">
+			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/estacionamiento.png" alt="">
+
+			<div class="info">
+				<h3 class="texto-centrado">Estacionamiento</h3>
+			</div><!-- caja -->
+
+		</div><!-- quinto -->
+
+		<div class="quinto caracteristica left">
+
+			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/habitaciones.png" alt="">
+
+			<div class="info">
+				<h3 class="texto-centrado">Tapanco, terraza y roofgarden</h3>
+			</div><!-- caja -->
+
+		</div><!-- quinto -->
+
+		<div class="quinto caracteristica left">
 
 			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/seguridad.png" alt="">
 
@@ -42,8 +58,7 @@
 				<h3 class="texto-centrado">Vigilancia y portón eléctrico</h3>
 			</div><!-- caja -->
 
-
-		</div><!-- tercio -->
+		</div><!-- quinto -->
 
 		<div class="clear"></div>
 
@@ -66,7 +81,10 @@
 			<input type="text" name="nombre" value="Nombre">
 			<input type="email" name="email" value="E-mail">
 			<input type="tel" name="celular" value="Celular">
-			<textarea name="mensaje" rows="7">Mensaje</textarea>
+
+			<input class="left" name="agendar" type="checkbox">
+			<label class="left" for="agendar">Quiero agendar una cita</label>
+
 			<input type="submit" value="enviar">
 
 		</form><!-- forma-cita -->

@@ -28,7 +28,6 @@
 				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit tollenda est atque extrahenda radicitus duo reges constructio interrete cur igitur cum de re conveniat non malumus usitate.Lorem ipsum dolor sit amet consectetur adipiscing elit tollenda est atque extrahenda radicitus duo reges constructio interrete cur igitur cum de re conveniat non malumus usitate.</p>
 			</div><!-- caja -->
 
-
 		</div><!-- tercio -->
 
 		<div class="tercio noticia left">
@@ -39,7 +38,6 @@
 				<h3>Consectetur adipiscing </h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nummus in Croesi divitiis obscuratur, pars est tamen divitiarum. Quod autem principium officii quaerunt, melius quam Pyrrho; Omnia peccata paria dicitis. Hic nihil fuit, quod quaereremus. Quis est, qui non oderit libidinosam, protervam adolescentiam? Est, ut dicis, inquit; Duo Reges: constructio interrete.</p>
 			</div><!-- caja -->
-
 
 		</div><!-- tercio -->
 
