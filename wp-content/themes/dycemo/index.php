@@ -1,16 +1,23 @@
 <?php get_header(); ?>
 
-	<div class="width">
+	<div class="width clearfix">
 
-		<h2 class="texto-centrado">Los Pinos 6</h2>
+		<div class="mitad left">
+			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/dycemo.jpg" alt="Nosotros">
+		</div><!-- mitad -->
 
-		<div class="slider cycle-slideshow width">
+		<div class="mitad left">
+			<div class="caja">
+				<h3>Dycemo</h3>
 
-			<img src="<?php echo THEMEPATH; ?>images/slide-pinos-01.jpg" alt="">
-			<img src="<?php echo THEMEPATH; ?>images/slide-pinos-02.jpg" alt="">
-			<img src="<?php echo THEMEPATH; ?>images/slide-pinos-03.jpg" alt="">
+				<p>En Dycemo nos dedicamos a la planeación, arquitectura y construcción de viviendas residenciales en México D.F. Buscamos diseñar espacios familiares dentro de la ciudad que sean tranquilos, seguros y cómodos.</p>
+				<p>Tenemos más de tres décadas construyendo residencias en la Ciudad de México. Te invitamos a conocer nuestro trabajo.</p>
 
-		</div><!-- slider -->
+			</div><!-- caja -->
+		</div><!-- mitad -->
+
+		<div class="clear"></div>
+		<hr>
 
 		<div class="tercio noticia left">
 
@@ -43,27 +50,15 @@
 			<input type="text" name="nombre" value="Nombre">
 			<input type="email" name="email" value="E-mail">
 			<input type="tel" name="celular" value="Celular">
-			<textarea name="mensaje" rows="7">Mensaje</textarea>
+
+			<input class="left" name="agendar" type="checkbox">
+			<label class="left" for="agendar">Quiero agendar una cita</label>
+
+
 			<input type="submit" value="enviar">
 
 		</form><!-- forma-cita -->
 
-		<div class="clear"></div>
-		<hr>
-
-		<div class="dos_tercios">
-
-			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/dycemo.jpg" alt="Nosotros">
-
-			<div class="caja">
-				<h3>Dycemo</h3>
-
-				<p>En Dycemo nos dedicamos a la planeación, arquitectura y construcción de viviendas residenciales en México D.F. Buscamos diseñar espacios familiares dentro de la ciudad que sean tranquilos, seguros y cómodos.</p>
-				<p>Tenemos más de tres décadas construyendo residencias en la Ciudad de México. Te invitamos a conocer nuestro trabajo.</p>
-
-			</div><!-- caja -->
-
-		</div><!-- dos_tercios -->
 
 	</div><!-- width -->
 
