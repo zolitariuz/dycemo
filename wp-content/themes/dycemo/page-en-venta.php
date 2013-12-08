@@ -2,13 +2,25 @@
 
 	<div class="width">
 
-		<div class="slider cycle-slideshow width">
+		<div class="slider cycle-slideshow dos_tercios left">
 
 			<img src="<?php echo THEMEPATH; ?>images/slide-pinos-01.jpg" alt="">
 			<img src="<?php echo THEMEPATH; ?>images/slide-pinos-02.jpg" alt="">
 			<img src="<?php echo THEMEPATH; ?>images/slide-pinos-03.jpg" alt="">
 
 		</div><!-- slider -->
+
+		<div class="left tercio">
+
+			<a class="boton venta" href="#">Galería</a>
+
+			<a class="boton venta" href="#">Recorrido virtual</a>
+
+			<a class="boton venta" href="#">Plano interactivo</a>
+
+		</div>
+
+		<div class="clear"></div>
 
 		<div class="quinto caracteristica left">
 
@@ -64,15 +76,17 @@
 
 		<div class="dos_tercios left content">
 
-			<h3>Los Pinos</h3>
-
-			<iframe width="635" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=San+Jer%C3%B3nimo+L%C3%ADdice,+La+Magdalena+Contreras,+Ciudad+de+M%C3%A9xico,+M%C3%A9xico&amp;aq=0&amp;oq=san+jeroni&amp;sll=37.0625,-95.677068&amp;sspn=94.056714,186.152344&amp;ie=UTF8&amp;hq=&amp;hnear=San+Jer%C3%B3nimo+L%C3%ADdice,+La+Magdalena+Contreras,+Ciudad+de+M%C3%A9xico,+Distrito+Federal,+M%C3%A9xico&amp;t=m&amp;z=14&amp;ll=19.326137,-99.226107&amp;output=embed"></iframe>
-
 			<p>Sea parte de este exclusivo condominio residencial ubicado en la avenida Los Pinos #5 de la colonia San Jerónimo Lídice, una de las zonas más bellas, tranquilas y mejor comunicadas al sur de la Ciudad de México.</p>
 			<p>Todas las residencias están construidas con materiales nacionales de la más alta calidad y con acabados de lujo que, con ayuda de nuestros expertos, podrá <a href="#">personalizar</a>.</p>
 			<p>El <a href="#">proyecto</a> esta pensado para la comodidad de su familia, con espacios ámplios que van desde los <strong>196 a los 300 metros cuadrados</strong> de terreno por casa, 4 habitaciones, 4.5 baños, jardín privado, comedor, desayunador y terraza. El condominio cuenta con vigilancia las 24 horas y portón eléctrico. </p>
 
+			<iframe width="635" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=San+Jer%C3%B3nimo+L%C3%ADdice,+La+Magdalena+Contreras,+Ciudad+de+M%C3%A9xico,+M%C3%A9xico&amp;aq=0&amp;oq=san+jeroni&amp;sll=37.0625,-95.677068&amp;sspn=94.056714,186.152344&amp;ie=UTF8&amp;hq=&amp;hnear=San+Jer%C3%B3nimo+L%C3%ADdice,+La+Magdalena+Contreras,+Ciudad+de+M%C3%A9xico,+Distrito+Federal,+M%C3%A9xico&amp;t=m&amp;z=14&amp;ll=19.326137,-99.226107&amp;output=embed"></iframe>
+
 		</div><!-- content -->
+
+		<div class="tercio left">
+			<a class="boton venta personaliza" href="#">Personaliza tu casa</a>
+		</div>
 
 		<form class="tercio forma-cita left caja" action="">
 
@@ -88,18 +102,6 @@
 			<input type="submit" value="enviar">
 
 		</form><!-- forma-cita -->
-
-		<div class="clear"></div>
-
-		<hr>
-
-		<a class="cuarto left boton venta" href="#">Galería</a>
-
-		<a class="cuarto left boton venta" href="#">Recorrido virtual</a>
-
-		<a class="cuarto left boton venta" href="#">Plano interactivo</a>
-
-		<a class="cuarto left boton venta" href="#">Personaliza tu casa</a>
 
 	</div><!-- width -->
 

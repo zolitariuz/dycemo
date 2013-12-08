@@ -254,10 +254,6 @@ h1{ margin: 20px 0;
 
 /*::::::::::::::::::::::::::: HOME :::::::::::::::::::: */
 
-//Slider
-.slider{ margin: 0 0 20px 0; }
-
-
 //Noticias
 .noticia{
 	img{}
@@ -298,6 +294,12 @@ footer{ padding: 10px 0; background: @cafe_obscuro;
 
 /*::::::::::::::::::::::::::: EN VENTA :::::::::::::::::::: */
 
-.boton.venta{ height: 100px; .sans-medium(16px, 80px); color: #fff; .transition( all 0.3s ease );
+//Slider
+.slider{
+	img{ width: 100%; height: auto; display: block; }
+}
+
+.boton.venta{ width: 100%; height: 90px; margin: 0 0 20px 0; .sans-medium(20px, 70px); color: #fff; .transition( all 0.3s ease ); display: block;
 	&:hover{ background: @azul_obscuro; }
+	&.personaliza{ margin-bottom: 0; }
 }
