@@ -1,6 +1,7 @@
 
 	</div><!--main -->
 
+	<?php if( ! is_page( 'contacto' ) ) {?>
 	<footer>
 		<div class="width clearfix">
 			<p class="left">Constuctora Dycemo S.A. de C.V. - Tel.55 56 83 68 00</p>
@@ -8,6 +9,8 @@
 
 		</div><!--Termina Footer Wrap-->
 	</footer>
+
+	<?php } ?>
 
 	<?php wp_footer(); ?>
 
