@@ -2,7 +2,15 @@
 
 	<div class="width">
 
-		<div class="slider cycle-slideshow dos_tercios left">
+		<a class="boton tabs alto tercio left" data-seccion="galeria" href="#">Galería</a>
+
+		<a class="boton tabs alto tercio left" data-seccion="recorrido" href="#">Recorrido virtual</a>
+
+		<a class="boton tabs alto tercio left" data-seccion="plano" href="#">Plano interactivo</a>
+
+		<div class="clear"></div>
+
+		<div class="pestana slider galeria cycle-slideshow width abierto" data-seccion="galeria">
 
 			<img src="<?php echo THEMEPATH; ?>images/slide-pinos-01.jpg" alt="">
 			<img src="<?php echo THEMEPATH; ?>images/slide-pinos-02.jpg" alt="">
@@ -10,17 +18,13 @@
 
 		</div><!-- slider -->
 
-		<div class="left tercio">
+		<div class="pestana recorrido width cerrado" data-seccion="recorrido">
+			<h2>Recorrido</h2>
+		</div><!-- recorrido -->
 
-			<a class="boton venta" href="#">Galería</a>
-
-			<a class="boton venta" href="#">Recorrido virtual</a>
-
-			<a class="boton venta" href="#">Plano interactivo</a>
-
-		</div>
-
-		<div class="clear"></div>
+		<div class="pestana plano width cerrado" data-seccion="plano">
+			<h2>Plano</h2>
+		</div><!-- plano -->
 
 		<div class="quinto caracteristica left">
 
@@ -80,12 +84,12 @@
 			<p>Todas las residencias están construidas con materiales nacionales de la más alta calidad y con acabados de lujo que, con ayuda de nuestros expertos, podrá <a href="#">personalizar</a>.</p>
 			<p>El <a href="#">proyecto</a> esta pensado para la comodidad de su familia, con espacios ámplios que van desde los <strong>196 a los 300 metros cuadrados</strong> de terreno por casa, 4 habitaciones, 4.5 baños, jardín privado, comedor, desayunador y terraza. El condominio cuenta con vigilancia las 24 horas y portón eléctrico. </p>
 
-			<iframe width="635" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=San+Jer%C3%B3nimo+L%C3%ADdice,+La+Magdalena+Contreras,+Ciudad+de+M%C3%A9xico,+M%C3%A9xico&amp;aq=0&amp;oq=san+jeroni&amp;sll=37.0625,-95.677068&amp;sspn=94.056714,186.152344&amp;ie=UTF8&amp;hq=&amp;hnear=San+Jer%C3%B3nimo+L%C3%ADdice,+La+Magdalena+Contreras,+Ciudad+de+M%C3%A9xico,+Distrito+Federal,+M%C3%A9xico&amp;t=m&amp;z=14&amp;ll=19.326137,-99.226107&amp;output=embed"></iframe>
+			<iframe width="635" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=19.332749,-99.21578&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=49.757664,92.988281&amp;ie=UTF8&amp;t=m&amp;z=14&amp;ll=19.332749,-99.21578&amp;output=embed"></iframe>
 
 		</div><!-- content -->
 
 		<div class="tercio left">
-			<a class="boton venta personaliza" href="#">Personaliza tu casa</a>
+			<a class="boton alto personaliza" href="#">Personaliza tu casa</a>
 		</div>
 
 		<form class="tercio forma-cita left caja" action="">

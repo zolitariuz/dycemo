@@ -8,7 +8,6 @@
 
 		<div class="mitad left">
 			<div class="caja">
-				<h3>Dycemo</h3>
 
 				<p>En Dycemo nos dedicamos a la planeación, arquitectura y construcción de viviendas residenciales en México D.F. Buscamos diseñar espacios familiares dentro de la ciudad que sean tranquilos, seguros y cómodos.</p>
 				<p>Tenemos más de tres décadas construyendo residencias en la Ciudad de México. Te invitamos a conocer nuestro trabajo.</p>

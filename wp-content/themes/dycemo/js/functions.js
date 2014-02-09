@@ -20,6 +20,15 @@
 		    }
 	    });
 
+	    //Tabs
+	    var seccion;
+	    $('.tabs').on('click', function(){
+	    	seccion = $(this).data('seccion');
+
+	    	$('.pestana').hide();
+	    	$(".pestana[data-seccion='"+seccion+"']").show();
+	    });
+
 
 	});
 

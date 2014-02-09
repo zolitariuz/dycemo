@@ -94,7 +94,7 @@ figure {margin: 0;}
 @gris_obscuro: #b6b6b6;
 @negro       : #222;
 @cafe        : #51452b;
-@cafe_claro  : #EBE3B1;
+@cafe_claro  : #D1CEBA;
 @cafe_obscuro: #8b8578;
 
 /*** MIXINS ***/
@@ -284,22 +284,26 @@ h1{ margin: 20px 0;
 /*::::::::::::::::::::::::::: FOOTER :::::::::::::::::::: */
 
 footer{ padding: 10px 0; background: @cafe_obscuro;
-	p{ width: 50%; margin: 0; color: @cafe;
+	div p{ margin: 0 !important; color: @cafe_claro; text-align: center; line-height: 3;
 		a{ color: @cafe_claro; text-decoration:none; }
 	}
-	.boton{ background: @cafe; .transition( all 0.3s ease );
+	.boton{ margin: 0; background: @cafe; .transition( all 0.3s ease );
 		&:hover{ background: darken(@cafe, 10%); color: #fff; }
 	}
 }
 
 /*::::::::::::::::::::::::::: EN VENTA :::::::::::::::::::: */
 
+.abierto{ display: block; }
+
+.cerrado{ display: none; }
+
 //Slider
 .slider{
 	img{ width: 100%; height: auto; display: block; }
 }
 
-.boton.venta{ width: 100%; height: 90px; margin: 0 0 20px 0; .sans-medium(20px, 70px); color: #fff; .transition( all 0.3s ease ); display: block;
+.boton.alto{ height: 90px; .sans-medium(20px, 70px); color: #fff; .transition( all 0.3s ease ); display: block;
 	&:hover{ background: @azul_obscuro; }
 	&.personaliza{ margin-bottom: 0; }
 }

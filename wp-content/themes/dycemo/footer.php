@@ -4,9 +4,9 @@
 	<?php if( ! is_page( 'contacto' ) ) {?>
 	<footer>
 		<div class="width clearfix">
-			<p class="left">Constuctora Dycemo S.A. de C.V. - Tel.55 56 83 68 00</p>
-
-
+			<p class="left tercio">Constuctora Dycemo S.A. de C.V.</p>
+			<p class="left tercio">Tel. 5683-6800</p>
+			<a class="left tercio boton" href="#">Contacto</a>
 		</div><!--Termina Footer Wrap-->
 	</footer>
 
