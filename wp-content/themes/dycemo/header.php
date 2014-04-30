@@ -29,11 +29,11 @@
 		  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=491141950999878";
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
-		<div class="container clearfix">
 
-		<header class="clearfix">
 
-			<div class="width">
+		<header>
+
+			<div class="width clearfix">
 
 				<h1 class="left">
 					<a href="<?php echo home_url(); ?>">

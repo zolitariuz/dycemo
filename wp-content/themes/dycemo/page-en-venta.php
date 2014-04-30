@@ -2,15 +2,15 @@
 
 	<div class="width">
 
-		<a class="boton tabs alto tercio left" data-seccion="galeria" href="#">Galería</a>
+		<a class="boton tabs alto columna c-4" data-seccion="galeria" href="#">Galería</a>
 
-		<a class="boton tabs alto tercio left" data-seccion="recorrido" href="#">Recorrido virtual</a>
+		<a class="boton tabs alto columna c-4" data-seccion="recorrido" href="#">Recorrido virtual</a>
 
-		<a class="boton tabs alto tercio left" data-seccion="plano" href="#">Plano interactivo</a>
+		<a class="boton tabs alto columna c-4" data-seccion="plano" href="#">Plano interactivo</a>
 
-		<div class="clear"></div>
+		<div class="clear margin-bottom"></div>
 
-		<div class="pestana slider galeria cycle-slideshow width abierto" data-seccion="galeria">
+		<div class="pestana slider galeria cycle-slideshow columna c-12 abierto" data-seccion="galeria">
 
 			<img src="<?php echo THEMEPATH; ?>images/slide-pinos-01.jpg" alt="">
 			<img src="<?php echo THEMEPATH; ?>images/slide-pinos-02.jpg" alt="">
