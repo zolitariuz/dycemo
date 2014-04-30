@@ -35,13 +35,13 @@
 
 			<div class="width clearfix">
 
-				<h1 class="left">
+				<h1 class="columna c-2">
 					<a href="<?php echo home_url(); ?>">
 						<img src="<?php echo THEMEPATH; ?>images/logo.png" alt="Dycemo" />
 					</a>
 				</h1>
 
-				<nav class="menu right">
+				<nav class="columna c-6 menu right">
 					<ul class="clearfix">
 						<li>
 							<a <?php if ( is_home() ){ echo 'class="active"'; } ?> href="<?php echo site_url(); ?>">Inicio</a>

@@ -227,7 +227,7 @@ figure {margin: 0;}
 
 	&.grid{ background: @azul_claro; color: @claro; padding: @margen; text-align: center; }
 
-  img{ width: 100%; height: auto; margin: 0 0 @margen 0; }
+  img{ width: 100%; height: auto; }
 
 }
 
@@ -278,9 +278,7 @@ html{ background: url('images/textura-gris.jpg') repeat; }
 
 .caja{ background: #fff; padding: 10px; .drop-shadow; }
 
-.imagen-100{ width: 100%; height: auto; display: block; }
-
-hr{ margin: 0 0 20px 0; border: 0; height: 1px; background: @azul_claro;}
+hr{ margin-bottom: 20px !important; border: 0; height: 1px; background: @azul_claro;}
 
 h1, h2, h3, h4, h5, h6{ margin-top: 0; }
 
@@ -306,7 +304,7 @@ iframe{ margin: 0 0 20px 0; }
 
 header{ margin: 0 0 20px 0; background: url('images/textura-azul.jpg') repeat; }
 
-h1{ margin: 20px 0;
+h1{ margin-top: @margen !important; margin-bottom: @margen !important;
 	a{
 		img{ width: 80%; height: auto; display: block; }
 	}
@@ -386,14 +384,22 @@ footer{ padding: 10px 0; background: @cafe_obscuro;
 /*::::::::::::::::::::::::::: NOSOTROS :::::::::::::::::::: */
 
 .portafolio{
-	a{ display: block; margin: 13px; float: left; }
+	a{ margin-bottom: @margen; padding: (@margen/2); background: @claro;
+		img{ }
+	}
 }
 
 /*::::::::::::::::::::::::::: CONTACTO :::::::::::::::::::: */
 
 .redes{
 	a{ width: 100%; display: block;
-		img{ margin: 0 10px 0 0; }
+		img{ width: auto; margin: 0 10px 0 0; }
+	}
+}
+
+.mapa-dycemo{
+	.mapa{ height: 0; padding-bottom: 100%; position: relative; overflow: hidden;
+		iframe{ width: 100% !important; height: 100% !important; margin: 0; position: absolute; top: 0; left: 0; }
 	}
 }
 

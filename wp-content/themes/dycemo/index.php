@@ -2,11 +2,11 @@
 
 	<div class="width clearfix">
 
-		<div class="mitad left">
-			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/dycemo.jpg" alt="Nosotros">
+		<div class="columna c-6">
+			<img src="<?php echo THEMEPATH; ?>images/dycemo.jpg" alt="Nosotros">
 		</div><!-- mitad -->
 
-		<div class="mitad left">
+		<div class="columna c-6">
 			<div class="caja">
 
 				<p>En Dycemo nos dedicamos a la planeación, arquitectura y construcción de viviendas residenciales en México D.F. Buscamos diseñar espacios familiares dentro de la ciudad que sean tranquilos, seguros y cómodos.</p>
@@ -16,31 +16,32 @@
 		</div><!-- mitad -->
 
 		<div class="clear"></div>
-		<hr>
 
-		<div class="tercio noticia left">
+		<hr class="columna c-12">
 
-			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/noticia-01.jpg" alt="">
+		<div class="noticia columna c-4">
+
+			<img src="<?php echo THEMEPATH; ?>images/noticia-01.png" alt="">
 
 			<div class="caja info">
 				<h3>Lorem Ipsum</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipiscing elit tollenda est atque extrahenda radicitus duo reges constructio interrete cur igitur cum de re conveniat non malumus usitate.Lorem ipsum dolor sit amet consectetur adipiscing elit tollenda est atque extrahenda radicitus duo reges constructio interrete cur igitur cum de re conveniat non malumus usitate.</p>
+				<p>Consectetur adipiscing elit tollenda est atque extrahenda radicitus duo reges constructio interrete cur igitur cum de re conveniat non malumus usitate.</p>
 			</div><!-- caja -->
 
 		</div><!-- tercio -->
 
-		<div class="tercio noticia left">
+		<div class="noticia columna c-4">
 
-			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/noticia-01.jpg" alt="">
+			<img src="<?php echo THEMEPATH; ?>images/noticia-01.png" alt="">
 
 			<div class="caja info">
 				<h3>Consectetur adipiscing </h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nummus in Croesi divitiis obscuratur, pars est tamen divitiarum. Quod autem principium officii quaerunt, melius quam Pyrrho; Omnia peccata paria dicitis. Hic nihil fuit, quod quaereremus. Quis est, qui non oderit libidinosam, protervam adolescentiam? Est, ut dicis, inquit; Duo Reges: constructio interrete.</p>
+				<p>Consectetur adipiscing elit tollenda est atque extrahenda radicitus duo reges constructio interrete cur igitur cum de re conveniat non malumus usitate.</p>
 			</div><!-- caja -->
 
 		</div><!-- tercio -->
 
-		<form class="tercio forma-cita left caja" action="">
+		<form class="forma-cita columna c-4 caja" action="">
 
 			<h3 class="texto-centrado">Haz una cita</h3>
 

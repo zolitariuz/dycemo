@@ -2,7 +2,7 @@
 
 	<div class="width">
 
-		<form class="mitad forma-cita left caja" action="">
+		<form class="columna c-6 forma-cita caja" action="">
 
 			<input type="text" name="nombre" value="Nombre">
 			<input type="email" name="email" value="E-mail">
@@ -12,7 +12,7 @@
 
 		</form><!-- forma-cita -->
 
-		<div class="cuarto left caja">
+		<div class="columna c-3 caja">
 			<h3>Dirección</h3>
 			<p>Constructora Dycemo S.A. de C.V. Cerrada de Presa Escolta # 42-6 San Jerónimo, Lídice, C.P. 10200</p>
 
@@ -30,8 +30,8 @@
 
 		</div>
 
-		<div class="cuarto left">
-			<div class="caja redes">
+		<div class="columna c-3 left caja">
+			<div class="redes">
 				<h3>Redes Sociales</h3>
 
 				<a class="clearfix" href="https://twitter.com/CDycemo" target="_blank">
@@ -45,10 +45,12 @@
 				</a>
 			</div><!-- caja redes -->
 
-			<div class="caja mapa-dycemo">
+			<div class="mapa-dycemo">
 				<h3>Mapa</h3>
 
-				<iframe width="195" height="195" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=Guadalajara+94B,+Roma+Norte,+Cuauht%C3%A9moc,+Ciudad+de+M%C3%A9xico,+M%C3%A9xico&amp;aq=0&amp;oq=Guadalajara+94,+M%C3%A9xico&amp;sll=37.0625,-95.677068&amp;sspn=49.757664,92.988281&amp;ie=UTF8&amp;hq=&amp;hnear=Guadalajara+94B,+Cuauht%C3%A9moc,+Ciudad+de+M%C3%A9xico,+Distrito+Federal,+M%C3%A9xico&amp;t=m&amp;z=14&amp;ll=19.416597,-99.171906&amp;output=embed"></iframe>
+				<div class="mapa">
+					<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=Guadalajara+94B,+Roma+Norte,+Cuauht%C3%A9moc,+Ciudad+de+M%C3%A9xico,+M%C3%A9xico&amp;aq=0&amp;oq=Guadalajara+94,+M%C3%A9xico&amp;sll=37.0625,-95.677068&amp;sspn=49.757664,92.988281&amp;ie=UTF8&amp;hq=&amp;hnear=Guadalajara+94B,+Cuauht%C3%A9moc,+Ciudad+de+M%C3%A9xico,+Distrito+Federal,+M%C3%A9xico&amp;t=m&amp;z=14&amp;ll=19.416597,-99.171906&amp;output=embed"></iframe>
+				</div><!-- mapa -->
 
 			</div><!-- caja mapa-dycemo -->
 
