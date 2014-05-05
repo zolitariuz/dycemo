@@ -70,4 +70,4 @@
 
 		</header>
 
-		<div class="main clearfix">
+		<div class="main">

@@ -19,7 +19,7 @@
 
 		<hr class="columna c-12">
 
-		<div class="noticia columna c-4">
+		<div class="post columna c-4">
 
 			<img src="<?php echo THEMEPATH; ?>images/noticia-01.png" alt="">
 
@@ -30,7 +30,7 @@
 
 		</div><!-- tercio -->
 
-		<div class="noticia columna c-4">
+		<div class="post columna c-4">
 
 			<img src="<?php echo THEMEPATH; ?>images/noticia-01.png" alt="">
 

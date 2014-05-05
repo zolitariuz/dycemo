@@ -4,11 +4,6 @@
 
 	$(function(){
 
-	    window.validateEmail = function (email) {
-	    	var regExp = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-	    	return regExp.test(email);
-	    };
-
 	    //Fancybox
 	    $('.fancybox').fancybox({
 	    	beforeShow : function() {
@@ -23,14 +18,28 @@
 	    //Tabs
 	    var seccion;
 	    $('.tabs').on('click', function(){
+
 	    	seccion = $(this).data('seccion');
 
-	    	$('.pestana').hide();
-	    	$(".pestana[data-seccion='"+seccion+"']").show();
+	    	$('.content-tabs > .tab').hide();
+	    	$(".content-tabs > .tab[data-seccion='"+seccion+"']").show();
+
 	    });
 
 	    $( "#datepicker" ).datepicker();
 
+	    //CHOSEN
+	    $('.chosen-casa').chosen();
+
+	    $('.forma-contacto').validate();
+
 	});
 
 })(jQuery);
+
+function showHide( clicked, data, container ){
+	var conatiner = $(clicked).data(data);
+
+	$('.pestana').hide();
+	$(".pestana[data-seccion='"+seccion+"']").show();
+}
