@@ -29,6 +29,7 @@
 	    	$(".pestana[data-seccion='"+seccion+"']").show();
 	    });
 
+	    $( "#datepicker" ).datepicker();
 
 	});
 
