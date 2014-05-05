@@ -2,12 +2,12 @@
 
 	<div class="width">
 
-		<form class="columna c-6 forma-cita caja" action="">
+		<form class="forma-contacto columna c-6 forma-cita caja" action="" method="post">
 
-			<input type="text" name="nombre" value="Nombre">
-			<input type="email" name="email" value="E-mail">
-			<input type="tel" name="celular" value="Celular">
-			<textarea name="mensaje" rows="7">Mensaje</textarea>
+			<input type="text" name="nombre" id="nombre" class="required" value="Nombre" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+			<input type="email" name="email" id="email" class="required email" value="E-mail" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+			<input type="tel" name="celular" id="celular" class="required" value="Celular" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+			<textarea name="mensaje" rows="7" id="mensaje" class="required" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Mensaje</textarea>
 			<input type="submit" value="enviar">
 
 		</form><!-- forma-cita -->
