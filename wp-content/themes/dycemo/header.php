@@ -12,7 +12,6 @@
 
 		<!-- jQuery UI -->
 		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-  		<link rel="stylesheet" href="/resources/demos/style.css">
 
 		<!--Webfonts: -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>

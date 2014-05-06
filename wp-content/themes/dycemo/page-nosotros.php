@@ -82,9 +82,9 @@
 		</div><!-- cuarto -->
 
 
-		<form class="columna c-3 forma-cita caja" action="">
+		<form class="forma-cita columna c-4 caja">
 
-			<h3 class="text-center">Haz una cita</h3>
+			<h3 class="texto-centrado">Haz una cita</h3>
 
 			<input type="text" name="nombre" value="Nombre">
 			<input type="email" name="email" value="E-mail">
@@ -93,10 +93,12 @@
 			<input class="left" name="agendar" type="checkbox">
 			<label class="left" for="agendar">Quiero agendar una cita</label>
 
+			<input type="text" name="fecha" id="datepicker" class="margin-bottom" value="Escoge la fecha">
+			
 			<input type="submit" value="enviar">
 
 		</form><!-- forma-cita -->
-
+		
 	</div><!-- width -->
 
 <?php get_sidebar(); ?>

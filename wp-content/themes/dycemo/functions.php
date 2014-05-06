@@ -245,3 +245,67 @@
 			OR isset($query->post_title) AND preg_match("/$string/i", remove_accents(str_replace(' ', '-', $query->post_title) ) ) )
 			echo 'active';
 	}
+
+	/**
+	 * Procesa la forma para hacer citas
+	 * @return json
+	 */
+	function procesa_cita(){
+		$nombre = $_POST['nombre'];
+		$email = $_POST['email'];
+		$celular = $_POST['celular'];
+		$fecha = $_POST['fecha'];
+		if($fecha == '')
+			$fecha = 'sin fecha';
+
+		$to = 'miguel@pcuervo.com';
+		$subject = $nombre.' quiere agendar una cita';
+		$headers = 'From: My Name <miguel@pcuervo.com>' . "\r\n";
+		$message = '<html><body>';
+		$message .= '<h1>Agendar una cita</h1>';
+		$message .= '<p>'.$nombre.' quiere agendar una cita para el día "'.$fecha.'"</p>';
+		$message .= '<p>Email: '. $email . '</p>';
+		$message .= '<p>Celular: '. $celular . '</p>';
+		$message .= '</body></html>';
+
+		add_filter('wp_mail_content_type',create_function('', 'return "text/html"; '));
+		wp_mail($to, $subject, $message, $headers );
+		//$nombre = $_POST['nombre'];
+		//$text = array('nombre' => $datos);
+		$msg = ['nombre' => $nombre];
+		echo json_encode($msg);
+		exit;
+	}
+	add_action('wp_ajax_procesa_cita', 'procesa_cita');
+	add_action('wp_ajax_nopriv_procesa_cita', 'procesa_cita');
+
+	/**
+	 * Procesa la forma de contacto
+	 * @return json
+	 */
+	function procesa_contacto(){
+		$nombre = $_POST['nombre'];
+		$email = $_POST['email'];
+		$celular = $_POST['celular'];
+		$mensaje = $_POST['mensaje'];
+
+		$to = 'miguel@pcuervo.com';
+		$subject = $nombre.' te ha contactado';
+		$headers = 'From: My Name <miguel@pcuervo.com>' . "\r\n";
+		$message = '<html><body>';
+		$message .= '<h1>Contacto dycemo</h1>';
+		$message .= '<p>'.$nombre.' ha escrito "'.$mensaje.'"</p>';
+		$message .= '<p>Email: '. $email . '</p>';
+		$message .= '<p>Celular: '. $celular . '</p>';
+		$message .= '</body></html>';
+
+		add_filter('wp_mail_content_type',create_function('', 'return "text/html"; '));
+		wp_mail($to, $subject, $message, $headers );
+		//$nombre = $_POST['nombre'];
+		//$text = array('nombre' => $datos);
+		$msg = ['nombre' => $nombre];
+		echo json_encode($msg);
+		exit;
+	}
+	add_action('wp_ajax_procesa_contacto', 'procesa_contacto');
+	add_action('wp_ajax_nopriv_procesa_contacto', 'procesa_contacto');
