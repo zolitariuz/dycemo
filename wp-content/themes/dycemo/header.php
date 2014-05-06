@@ -10,8 +10,14 @@
 		<meta http-equiv="cleartype" content="on">
 		<meta name="keywords" content="Casas, venta, San Jerónimo, Inmobiliaria, Dycemo, Constructora Dycemo, México DF, venta de casas, construcción de casas, arquitectos, arquitectura, México, Distrito Federal, Magdalena Contreras, Lidice"/>
 
+		<!-- jQuery UI -->
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  		<link rel="stylesheet" href="/resources/demos/style.css">
+
 		<!--Webfonts: -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+		
 
 		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<?php wp_head(); ?>

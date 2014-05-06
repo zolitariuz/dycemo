@@ -26,6 +26,8 @@
 
 	    });
 
+	    $( "#datepicker" ).datepicker();
+
 	    //CHOSEN
 	    $('.chosen-casa').chosen();
 

@@ -52,7 +52,8 @@
 			<input class="left" name="agendar" type="checkbox">
 			<label class="left" for="agendar">Quiero agendar una cita</label>
 
-
+			<p>Date: <input type="text" id="datepicker"></p>
+			
 			<input type="submit" value="enviar">
 
 		</form><!-- forma-cita -->
