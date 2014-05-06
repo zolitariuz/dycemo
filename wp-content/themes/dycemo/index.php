@@ -3,44 +3,53 @@
 	<div class="width clearfix">
 
 		<div class="caja clearfix margin-bottom">
+
+			<?php
+				$home = get_page_by_title( 'home' );
+				$homeId = $home->ID;
+				$homeContent = $home->post_content;
+			?>
+
 			<div class="columna c-6">
-				<img src="<?php echo THEMEPATH; ?>images/dycemo.jpg" alt="Nosotros">
+				<?php echo get_the_post_thumbnail( $homeId ); ?>
 			</div><!-- mitad -->
 
 			<div class="columna c-6">
 
-					<p>En Dycemo nos dedicamos a la planeación, arquitectura y construcción de viviendas residenciales en México D.F. Buscamos diseñar espacios familiares dentro de la ciudad que sean tranquilos, seguros y cómodos.</p>
-					<p>Tenemos más de tres décadas construyendo residencias en la Ciudad de México. Te invitamos a conocer nuestro trabajo.</p>
+				<?php echo wpautop( $homeContent ); ?>
 
-			</div><!-- mitad -->
+				<div class="z"></div>
+
+			</div><!-- columna c-6 -->
 		</div><!-- caja -->
 
 		<div class="clear"></div>
 
 		<hr class="columna c-12">
 
-		<div class="post columna c-4">
+		<?php
+			$noticiasArgs = array(
+				'category_name' 	=> 'noticias',
+				'posts_per_page' 	=> 2
+			);
+			$noticiasQuery = new WP_Query($noticiasArgs);
 
-			<img src="<?php echo THEMEPATH; ?>images/noticia-01.png" alt="">
+			if( $noticiasQuery->have_posts() ) : while( $noticiasQuery->have_posts() ) : $noticiasQuery->the_post(); ?>
 
-			<div class="caja info">
-				<h3>Lorem Ipsum</h3>
-				<p>Consectetur adipiscing elit tollenda est atque extrahenda radicitus duo reges constructio interrete cur igitur cum de re conveniat non malumus usitate.</p>
-			</div><!-- caja -->
+				<div class="post columna c-4">
 
-		</div><!-- tercio -->
+					<?php the_post_thumbnail( 'large' ); ?>
 
-		<div class="post columna c-4">
+					<div class="caja info">
+						<h3><?php the_title(); ?></h3>
+						<p><?php the_excerpt(); ?></p>
+					</div><!-- caja -->
 
-			<img src="<?php echo THEMEPATH; ?>images/noticia-01.png" alt="">
+				</div><!-- tercio -->
 
-			<div class="caja info">
-				<h3>Consectetur adipiscing </h3>
-				<p>Consectetur adipiscing elit tollenda est atque extrahenda radicitus duo reges constructio interrete cur igitur cum de re conveniat non malumus usitate.</p>
-			</div><!-- caja -->
+			<?php endwhile; endif; wp_reset_query(); ?>
 
-		</div><!-- tercio -->
-	
+
 		<form class="forma-cita forma columna c-4 caja">
 
 			<h3 class="texto-centrado">Haz una cita</h3>
@@ -53,7 +62,7 @@
 			<label class="left" for="agendar">Quiero agendar una cita</label>
 
 			<input type="text" name="fecha" id="datepicker" class="margin-bottom" value="Escoge la fecha">
-			
+
 			<input type="submit" value="enviar">
 
 		</form><!-- forma-cita -->

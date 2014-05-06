@@ -7,19 +7,19 @@
 	add_action('init', function(){
 
 
-		// NOTICIAS
-		/*$labels = array(
-			'name'          => 'Noticias',
-			'singular_name' => 'Noticia',
-			'add_new'       => 'Nueva Noticia',
-			'add_new_item'  => 'Nueva Noticia',
-			'edit_item'     => 'Editar Noticia',
-			'new_item'      => 'Nueva Noticia',
+		// En venta
+		$labels = array(
+			'name'          => 'En venta',
+			'singular_name' => 'En venta',
+			'add_new'       => 'Nueva En venta',
+			'add_new_item'  => 'Nueva En venta',
+			'edit_item'     => 'Editar En venta',
+			'new_item'      => 'Nueva En venta',
 			'all_items'     => 'Todas',
-			'view_item'     => 'Ver Noticia',
-			'search_items'  => 'Buscar Noticia',
+			'view_item'     => 'Ver En venta',
+			'search_items'  => 'Buscar En venta',
 			'not_found'     => 'No se encontro',
-			'menu_name'     => 'Noticias'
+			'menu_name'     => 'En venta'
 		);
 
 		$args = array(
@@ -29,7 +29,7 @@
 			'show_ui'            => true,
 			'show_in_menu'       => true,
 			'query_var'          => true,
-			'rewrite'            => array( 'slug' => 'noticias' ),
+			'rewrite'            => array( 'slug' => 'en-venta' ),
 			'capability_type'    => 'post',
 			'has_archive'        => true,
 			'hierarchical'       => false,
@@ -37,6 +37,6 @@
 			'taxonomies'         => array( 'category' ),
 			'supports'           => array( 'title', 'editor', 'thumbnail' )
 		);
-		register_post_type( 'noticia', $args );*/
+		register_post_type( 'en-venta', $args );
 
 	});

@@ -16,7 +16,7 @@
 		<!--Webfonts: -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
-		
+
 
 		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<?php wp_head(); ?>
@@ -49,7 +49,7 @@
 				<nav class="columna c-6 menu right">
 					<ul class="clearfix">
 						<li>
-							<a <?php if ( is_home() ){ echo 'class="active"'; } ?> href="<?php echo site_url(); ?>">Inicio</a>
+							<a <?php if ( is_category('noticias') ){ echo 'class="active"'; } ?> href="<?php echo site_url('d/noticias'); ?>">Noticias</a>
 						</li>
 
 						<li>

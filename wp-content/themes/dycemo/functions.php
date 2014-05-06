@@ -106,11 +106,11 @@
 		// add_image_size( 'size_name', 200, 200, true );
 
 		// cambiar el tamaño del thumbnail
-		/*
-		update_option( 'thumbnail_size_h', 100 );
-		update_option( 'thumbnail_size_w', 200 );
-		update_option( 'thumbnail_crop', false );
-		*/
+
+		update_option( 'large_size_h', 600 );
+		update_option( 'large_size_w', 600 );
+		update_option( 'large_crop', true );
+
 	}
 
 
@@ -154,9 +154,9 @@
 
 
 
-	/*add_filter('excerpt_length', function($length){
+	add_filter('excerpt_length', function($length){
 		return 20;
-	});*/
+	});
 
 
 	/*add_filter('excerpt_more', function(){

@@ -6,18 +6,6 @@
 
 	add_action('init', function(){
 
-
-		// En Venta
-		if( ! get_page_by_path('en-venta') ){
-			$page = array(
-				'post_author' => 1,
-				'post_status' => 'publish',
-				'post_title'  => 'En Venta',
-				'post_type'   => 'page'
-			);
-			wp_insert_post( $page, true );
-		}
-
 		// Contacto
 		if( ! get_page_by_path('contacto') ){
 			$page = array(
@@ -40,16 +28,18 @@
 			wp_insert_post( $page, true );
 		}
 
-		// Escoge tu casa
-		if( ! get_page_by_path('escoge-tu-casa') ){
+		// Home
+		if( ! get_page_by_path('home') ){
 			$page = array(
 				'post_author' => 1,
 				'post_status' => 'publish',
-				'post_title'  => 'Escoge tu casa',
+				'post_title'  => 'Home',
 				'post_type'   => 'page'
 			);
 			wp_insert_post( $page, true );
 		}
+
+
 
 
 	});
