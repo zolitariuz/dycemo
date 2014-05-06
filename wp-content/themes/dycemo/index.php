@@ -40,8 +40,8 @@
 			</div><!-- caja -->
 
 		</div><!-- tercio -->
-
-		<form class="forma-cita columna c-4 caja">
+	
+		<form class="forma-cita forma columna c-4 caja">
 
 			<h3 class="texto-centrado">Haz una cita</h3>
 
