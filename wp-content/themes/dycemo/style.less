@@ -287,7 +287,7 @@ hr{ margin-bottom: 20px !important; border: 0; height: 1px; background: @azul_cl
 h1, h2, h3, h4, h5, h6{ margin-top: 0; }
 
 h2{ margin: 0 0 20px 0; .bitter-regular(22px, 22px); color: @azul_claro; }
-h3{ margin: 0 0 14px 0; .bitter-regular(18px, 18px); color: @azul_claro; }
+h3{ margin: 0 0 14px 0; .bitter-regular(1.2em, 1.4em); color: @azul_claro; }
 
 p{ .sans-medium(14px, 20px); color: @negro; }
 a{ .sans-medium(14px, 18px); color: @azul_claro; text-decoration: none;
@@ -360,9 +360,12 @@ h1{ margin-top: @margen !important; margin-bottom: @margen !important;
 		&[type='checkbox']{ width: 10%; position: relative; top: 4px; }
 	}
 	label{ width: 90%; margin: 0 0 20px 0; .bitter-regular(18px, 18px); color: @azul_claro;
-		&.error{ display: block; width: 100%; margin: 0; padding: (@margen/2); border-bottom: 1px solid @gris_obscuro; text-align: center; background: @claro; color: @warning; font-size: 1em; }
+		&.error{ display: block; width: 100%; margin: 0; padding: (@margen/2); border-bottom: 1px solid @gris_obscuro; text-align: center; background: @claro; color: @warning; font-size: 1em;
+			&[for='mensaje']{ position: relative; top: -(@margen + 3); }
+			&[for='celular']{ position: relative; top: -@margen; }
+		}
 	}
-	textarea{ margin: 0 0 20px 0; .sans-medium(14px, 16px); .border-radiuses(0px, 2px, 2px, 0px); }
+	textarea{ height: (@margen*4); margin: 0 0 20px 0; .sans-medium(14px, 16px); .border-radius(2px); }
 	input:focus, textarea:focus { outline: 0; }
 
 	&.forma-contact{
@@ -374,10 +377,11 @@ h1{ margin-top: @margen !important; margin-bottom: @margen !important;
 /*::::::::::::::::::::::::::: FOOTER :::::::::::::::::::: */
 
 footer{ padding: 10px 0; background: @cafe_obscuro;
-	div p{ margin: 0 !important; color: @cafe_claro; text-align: center; line-height: 3;
+	div{ margin-bottom: 0 !important; }
+	div p{ margin: 0 !important; color: @cafe_claro; line-height: 1.4;
 		a{ color: @cafe_claro; text-decoration:none; }
 	}
-	.boton{ margin: 0; background: @cafe; .transition( all 0.3s ease );
+	.boton{ background: @cafe; .transition( all 0.3s ease );
 		&:hover{ background: darken(@cafe, 10%); color: @claro; }
 	}
 }
@@ -436,9 +440,7 @@ footer{ padding: 10px 0; background: @cafe_obscuro;
 /*** MEDIA QUERIES ***/
 
 @media only screen and (max-width : 1024px) {
-
-
-
+	.width{ width: 90%; }
 }
 
 @media only screen and (max-device-width : 1024px) {
@@ -483,6 +485,12 @@ footer{ padding: 10px 0; background: @cafe_obscuro;
 	.medium{ display: block; }
 	.no-medium{ display: none; }
 
+	.medium-center{ margin-left: auto !important; margin-right: auto !important; float: none !important; }
+
+	h3{ .bitter-regular(1em, 1.2em); }
+
+
+
 }
 
 @media only screen and (max-device-width : 768px) {
@@ -490,6 +498,8 @@ footer{ padding: 10px 0; background: @cafe_obscuro;
 }
 
 @media only screen and (max-width : 620px) {
+
+	h3{ .bitter-regular(0.8em, 1em); }
 
 }
 
@@ -534,6 +544,8 @@ footer{ padding: 10px 0; background: @cafe_obscuro;
 
 	.small{ display: block; }
 	.no-small{ display: none; }
+
+	.small-margin-bottom{ margin-bottom: @margen !important; }
 
 }
 

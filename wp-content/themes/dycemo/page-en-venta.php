@@ -30,7 +30,7 @@
 
 		</div><!-- cotent-tabs -->
 
-		<div class="quinto caracteristica left">
+		<div class="columna c-2 medium-4 caracteristica left">
 
 			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/cuartos.png" alt="">
 
@@ -40,7 +40,7 @@
 
 		</div><!-- quinto -->
 
-		<div class="quinto caracteristica left">
+		<div class="columna c-2 medium-4 caracteristica left">
 
 			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/jardin.png" alt="">
 
@@ -50,7 +50,7 @@
 
 		</div><!-- quinto -->
 
-		<div class="quinto caracteristica left">
+		<div class="columna c-2 medium-4 caracteristica left">
 
 			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/estacionamiento.png" alt="">
 
@@ -60,7 +60,9 @@
 
 		</div><!-- quinto -->
 
-		<div class="quinto caracteristica left">
+		<div class="clear"></div>
+
+		<div class="columna c-2 medium-4 caracteristica left">
 
 			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/habitaciones.png" alt="">
 
@@ -70,7 +72,17 @@
 
 		</div><!-- quinto -->
 
-		<div class="quinto caracteristica left">
+		<div class="columna c-2 medium-4 caracteristica left">
+
+			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/seguridad.png" alt="">
+
+			<div class="info">
+				<h3 class="text-center">Vigilancia y portón eléctrico</h3>
+			</div><!-- caja -->
+
+		</div><!-- quinto -->
+
+		<div class="columna c-2 medium-4 caracteristica left">
 
 			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/seguridad.png" alt="">
 
@@ -82,7 +94,7 @@
 
 		<div class="clear"></div>
 
-		<div class="columna c-8 content">
+		<div class="columna c-8 small-12 content">
 
 			<p>Sea parte de este exclusivo condominio residencial ubicado en la avenida Los Pinos #5 de la colonia San Jerónimo Lídice, una de las zonas más bellas, tranquilas y mejor comunicadas al sur de la Ciudad de México.</p>
 			<p>Todas las residencias están construidas con materiales nacionales de la más alta calidad y con acabados de lujo que, con ayuda de nuestros expertos, podrá <a href="#">personalizar</a>.</p>
@@ -94,7 +106,7 @@
 
 		</div><!-- content -->
 
-		<div class="columna c-4">
+		<div class="columna c-4 small-12">
 
 			<a class="boton alto escoge margin-bottom" href="#">Escoge tu casa</a>
 

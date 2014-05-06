@@ -2,18 +2,18 @@
 
 	<div class="width clearfix">
 
-		<div class="columna c-6">
-			<img src="<?php echo THEMEPATH; ?>images/dycemo.jpg" alt="Nosotros">
-		</div><!-- mitad -->
+		<div class="caja clearfix margin-bottom">
+			<div class="columna c-6">
+				<img src="<?php echo THEMEPATH; ?>images/dycemo.jpg" alt="Nosotros">
+			</div><!-- mitad -->
 
-		<div class="columna c-6">
-			<div class="caja">
+			<div class="columna c-6">
 
-				<p>En Dycemo nos dedicamos a la planeación, arquitectura y construcción de viviendas residenciales en México D.F. Buscamos diseñar espacios familiares dentro de la ciudad que sean tranquilos, seguros y cómodos.</p>
-				<p>Tenemos más de tres décadas construyendo residencias en la Ciudad de México. Te invitamos a conocer nuestro trabajo.</p>
+					<p>En Dycemo nos dedicamos a la planeación, arquitectura y construcción de viviendas residenciales en México D.F. Buscamos diseñar espacios familiares dentro de la ciudad que sean tranquilos, seguros y cómodos.</p>
+					<p>Tenemos más de tres décadas construyendo residencias en la Ciudad de México. Te invitamos a conocer nuestro trabajo.</p>
 
-			</div><!-- caja -->
-		</div><!-- mitad -->
+			</div><!-- mitad -->
+		</div><!-- caja -->
 
 		<div class="clear"></div>
 

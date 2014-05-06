@@ -525,7 +525,7 @@ h2 {
 }
 h3 {
   margin: 0 0 14px 0;
-  font: normal 18px/18px 'bitter-regular';
+  font: normal 1.2em/1.4em 'bitter-regular';
   color: #53bfd2;
 }
 p {
@@ -728,21 +728,21 @@ h1 a img {
   color: #e74c3c;
   font-size: 1em;
 }
+.forma-cita label.error[for='mensaje'] {
+  position: relative;
+  top: -23px;
+}
+.forma-cita label.error[for='celular'] {
+  position: relative;
+  top: -20px;
+}
 .forma-cita textarea {
+  height: 80px;
   margin: 0 0 20px 0;
   font: 400 14px/16px 'Open Sans';
-  -webkit-border-top-right-radius: 0px;
-  -webkit-border-bottom-right-radius: 2px;
-  -webkit-border-bottom-left-radius: 2px;
-  -webkit-border-top-left-radius: 0px;
-  -moz-border-radius-topright: 0px;
-  -moz-border-radius-bottomright: 2px;
-  -moz-border-radius-bottomleft: 2px;
-  -moz-border-radius-topleft: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-top-left-radius: 0px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
@@ -756,18 +756,19 @@ footer {
   padding: 10px 0;
   background: #8b8578;
 }
+footer div {
+  margin-bottom: 0 !important;
+}
 footer div p {
   margin: 0 !important;
   color: #d1ceba;
-  text-align: center;
-  line-height: 3;
+  line-height: 1.4;
 }
 footer div p a {
   color: #d1ceba;
   text-decoration: none;
 }
 footer .boton {
-  margin: 0;
   background: #51452b;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -863,6 +864,11 @@ footer .boton:hover {
   display: none;
 }
 /*** MEDIA QUERIES ***/
+@media only screen and (max-width: 1024px) {
+  .width {
+    width: 90%;
+  }
+}
 @media only screen and (max-width: 768px) {
   .columna.medium-1 {
     width: 6.3%;
@@ -941,6 +947,19 @@ footer .boton:hover {
   }
   .no-medium {
     display: none;
+  }
+  .medium-center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+  }
+  h3 {
+    font: normal 1em/1.2em 'bitter-regular';
+  }
+}
+@media only screen and (max-width: 620px) {
+  h3 {
+    font: normal 0.8em/1em 'bitter-regular';
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1021,6 +1040,9 @@ footer .boton:hover {
   }
   .no-small {
     display: none;
+  }
+  .small-margin-bottom {
+    margin-bottom: 20px !important;
   }
 }
 /*::::::::::::::::::::::::::: FANCYBOX :::::::::::::::::::: */
