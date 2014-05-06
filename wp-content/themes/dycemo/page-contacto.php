@@ -2,11 +2,12 @@
 
 	<div class="width clearfix">
 
-		<form class="forma-contacto columna c-6 medium-10 small-12 forma-cita caja margin-bottom medium-center" action="cotacto-recibido" method="post">
+		<form class="forma-contacto columna c-6 medium-10 small-12 forma caja margin-bottom medium-center" action="cotacto-recibido" method="post">
 			<input type="text" name="nombre" class="required text" value="Nombre" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
 			<input type="email" name="email" id="email" class="required" value="E-mail" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
 			<input type="tel" name="celular" id="celular" class="required" value="Celular" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
 			<textarea name="mensaje" id="mensaje" class="required" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Mensaje</textarea>
+
 			<input type="submit" value="enviar">
 		</form><!-- forma-cita -->
 

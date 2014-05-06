@@ -40,8 +40,8 @@
 			</div><!-- caja -->
 
 		</div><!-- tercio -->
-
-		<form class="forma-cita columna c-4 caja" action="">
+	
+		<form class="forma-cita forma columna c-4 caja">
 
 			<h3 class="texto-centrado">Haz una cita</h3>
 
@@ -52,7 +52,7 @@
 			<input class="left" name="agendar" type="checkbox">
 			<label class="left" for="agendar">Quiero agendar una cita</label>
 
-			<p>Date: <input type="text" id="datepicker"></p>
+			<input type="text" name="fecha" id="datepicker" class="margin-bottom" value="Escoge la fecha">
 			
 			<input type="submit" value="enviar">
 

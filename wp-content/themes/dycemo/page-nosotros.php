@@ -89,7 +89,7 @@
 
 			</div><!-- cuarto -->
 
-			<form class="columna c-3 medium-6 small-12 forma-cita caja" action="">
+			<form class="columna c-3 medium-6 small-12 forma-cita forma caja" action="">
 
 				<h3 class="text-center">Haz una cita</h3>
 
@@ -100,16 +100,13 @@
 				<input class="left" name="agendar" type="checkbox">
 				<label class="left" for="agendar">Quiero agendar una cita</label>
 
+				<input type="text" name="fecha" id="datepicker" class="margin-bottom" value="Escoge la fecha">
+
 				<input type="submit" value="enviar">
 
 			</form><!-- forma-cita -->
 
 		</div><!-- clearfix -->
-
-
-
-
-
 
 	</div><!-- width -->
 
