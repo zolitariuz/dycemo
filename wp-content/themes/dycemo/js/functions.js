@@ -78,7 +78,8 @@ function procesaCita(){
 		  		action: "procesa_cita"
 		  	},
 		  	success: function(data){
-		  		console.log(data);
+		  		json = $.parseJSON(data);
+		  		$('.forma').html('<p>Gracias por contactarnos '+json.nombre+', en breve nos pondremos en contacto contigo.</p>');
 		  	}
 		});
 	});
@@ -104,7 +105,6 @@ function procesaContacto(){
 		var email = $('input[name="email"').val();
 		var celular = $('input[name="celular"').val();
 		var msg = $('textarea[name="mensaje"').val();
-		console.log(msg);
 
 		e.preventDefault();
 		$.ajax({
@@ -118,7 +118,8 @@ function procesaContacto(){
 		  		action: "procesa_contacto"
 		  	},
 		  	success: function(data){
-		  		console.log(data);
+		  		json = $.parseJSON(data);
+		  		$('.forma').html('<p>Gracias por contactarnos '+json.nombre+', en breve nos pondremos en contacto contigo.</p>');
 		  	}
 		});
 	});

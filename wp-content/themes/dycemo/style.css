@@ -751,6 +751,9 @@ h1 a img {
 .forma textarea:focus {
   outline: 0;
 }
+.forma p {
+  color: #ffffff;
+}
 /*::::::::::::::::::::::::::: FOOTER :::::::::::::::::::: */
 footer {
   padding: 10px 0;
