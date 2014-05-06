@@ -29,7 +29,18 @@
 	    //CHOSEN
 	    $('.chosen-casa').chosen();
 
-	    $('.forma-contacto').validate();
+	    $.validator.addMethod("notEqualTo", function(v, e, p) {
+			return this.optional(e) || v != p;
+		}, 'Por favor introduce un valor distinto al default.');
+
+	    $('.forma-contacto').validate({
+	   		rules: {
+				nombre: { notEqualTo: 'Nombre' },
+				email: { notEqualTo: 'E-mail' },
+				celular: { notEqualTo: 'Celular' },
+				mensaje: { notEqualTo: 'Mensaje' }
+			}
+	    });
 
 	});
 

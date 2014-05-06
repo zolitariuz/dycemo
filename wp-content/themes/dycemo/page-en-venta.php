@@ -30,7 +30,7 @@
 
 		</div><!-- cotent-tabs -->
 
-		<div class="quinto caracteristica left">
+		<div class="columna c-2 caracteristica left">
 
 			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/cuartos.png" alt="">
 
@@ -40,7 +40,7 @@
 
 		</div><!-- quinto -->
 
-		<div class="quinto caracteristica left">
+		<div class="columna c-2 caracteristica left">
 
 			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/jardin.png" alt="">
 
@@ -50,7 +50,7 @@
 
 		</div><!-- quinto -->
 
-		<div class="quinto caracteristica left">
+		<div class="columna c-2 caracteristica left">
 
 			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/estacionamiento.png" alt="">
 
@@ -60,7 +60,7 @@
 
 		</div><!-- quinto -->
 
-		<div class="quinto caracteristica left">
+		<div class="columna c-2 caracteristica left">
 
 			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/habitaciones.png" alt="">
 
@@ -70,7 +70,17 @@
 
 		</div><!-- quinto -->
 
-		<div class="quinto caracteristica left">
+		<div class="columna c-2 caracteristica left">
+
+			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/seguridad.png" alt="">
+
+			<div class="info">
+				<h3 class="text-center">Vigilancia y portón eléctrico</h3>
+			</div><!-- caja -->
+
+		</div><!-- quinto -->
+
+		<div class="columna c-2 caracteristica left">
 
 			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/seguridad.png" alt="">
 
