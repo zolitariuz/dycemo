@@ -396,8 +396,10 @@ footer{ padding: 10px 0; background: @cafe_obscuro;
 	img{ width: 100%; height: auto; display: block; }
 }
 
-.boton.alto{ height: 90px; .sans-medium(20px, 70px); color: @claro; .transition( all 0.3s ease ); display: block;
+.boton.alto{ display: table; height: (@margen*3); .sans-medium(1.4em, 1.6em); color: @claro; .transition( all 0.3s ease );
 	&:hover, &.activo{ background: @azul_obscuro; }
+
+	span{display: table-cell; vertical-align: middle;}
 }
 
 .boton.detalles{ .transition( all 0.3s ease );
@@ -448,6 +450,9 @@ footer{ padding: 10px 0; background: @cafe_obscuro;
 }
 
 @media only screen and (max-width : 768px) {
+
+	.clear-medium { clear:both; height:1px; margin:0; padding:0; font-size: 1px; line-height: 0; }
+
 
 	//Framework
 	.columna{
@@ -546,6 +551,8 @@ footer{ padding: 10px 0; background: @cafe_obscuro;
 	.no-small{ display: none; }
 
 	.small-margin-bottom{ margin-bottom: @margen !important; }
+
+	.boton.alto{  .sans-medium(1em, 1.5em); }
 
 }
 

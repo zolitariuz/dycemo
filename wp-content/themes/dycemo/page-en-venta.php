@@ -2,11 +2,17 @@
 
 	<div class="width clearfix">
 
-		<a class="boton tabs alto columna c-4 activo" data-seccion="galeria" href="#">Galería</a>
+		<a class="boton tabs alto columna c-4 activo" data-seccion="galeria" href="#">
+			<span>Galería</span>
+		</a>
 
-		<a class="boton tabs alto columna c-4" data-seccion="recorrido" href="#">Recorrido virtual</a>
+		<a class="boton tabs alto columna c-4" data-seccion="recorrido" href="#">
+			<span>Recorrido virtual</span>
+		</a>
 
-		<a class="boton tabs alto columna c-4" data-seccion="plano" href="#">Plano interactivo</a>
+		<a class="boton tabs alto columna c-4" data-seccion="plano" href="#">
+			<span>Plano interactivo</span>
+		</a>
 
 		<div class="clear margin-bottom"></div>
 
@@ -30,69 +36,73 @@
 
 		</div><!-- cotent-tabs -->
 
-		<div class="columna c-2 medium-4 caracteristica left">
-
-			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/cuartos.png" alt="">
-
-			<div class="info">
-				<h3 class="text-center">4 habitaciones y 4.5 baños</h3>
-			</div><!-- caja -->
-
-		</div><!-- quinto -->
-
-		<div class="columna c-2 medium-4 caracteristica left">
-
-			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/jardin.png" alt="">
-
-			<div class="info">
-				<h3 class="text-center">196-300m<sup>2</sup> con jardines amplios</h3>
-			</div><!-- caja -->
-
-		</div><!-- quinto -->
-
-		<div class="columna c-2 medium-4 caracteristica left">
-
-			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/estacionamiento.png" alt="">
-
-			<div class="info">
-				<h3 class="text-center">Estacionamiento</h3>
-			</div><!-- caja -->
-
-		</div><!-- quinto -->
-
 		<div class="clear"></div>
 
-		<div class="columna c-2 medium-4 caracteristica left">
+		<div class="full clearfix">
 
-			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/habitaciones.png" alt="">
+			<div class="columna c-2 medium-4 caracteristica left">
 
-			<div class="info">
-				<h3 class="text-center">Tapanco, terraza y roofgarden</h3>
-			</div><!-- caja -->
+				<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/cuartos.png" alt="">
 
-		</div><!-- quinto -->
+				<div class="info">
+					<h3 class="text-center">4 habitaciones y 4.5 baños</h3>
+				</div><!-- caja -->
 
-		<div class="columna c-2 medium-4 caracteristica left">
+			</div><!-- quinto -->
 
-			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/seguridad.png" alt="">
+			<div class="columna c-2 medium-4 caracteristica left">
 
-			<div class="info">
-				<h3 class="text-center">Vigilancia y portón eléctrico</h3>
-			</div><!-- caja -->
+				<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/jardin.png" alt="">
 
-		</div><!-- quinto -->
+				<div class="info">
+					<h3 class="text-center">196-300m<sup>2</sup> con jardines amplios</h3>
+				</div><!-- caja -->
 
-		<div class="columna c-2 medium-4 caracteristica left">
+			</div><!-- quinto -->
 
-			<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/seguridad.png" alt="">
+			<div class="columna c-2 medium-4 caracteristica left">
 
-			<div class="info">
-				<h3 class="text-center">Vigilancia y portón eléctrico</h3>
-			</div><!-- caja -->
+				<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/estacionamiento.png" alt="">
 
-		</div><!-- quinto -->
+				<div class="info">
+					<h3 class="text-center">Estacionamiento</h3>
+				</div><!-- caja -->
 
-		<div class="clear"></div>
+			</div><!-- quinto -->
+
+			<div class="clear-medium"></div>
+
+			<div class="columna c-2 medium-4 caracteristica left">
+
+				<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/habitaciones.png" alt="">
+
+				<div class="info">
+					<h3 class="text-center">Tapanco, terraza y roofgarden</h3>
+				</div><!-- caja -->
+
+			</div><!-- quinto -->
+
+			<div class="columna c-2 medium-4 caracteristica left">
+
+				<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/seguridad.png" alt="">
+
+				<div class="info">
+					<h3 class="text-center">Vigilancia y portón eléctrico</h3>
+				</div><!-- caja -->
+
+			</div><!-- quinto -->
+
+			<div class="columna c-2 medium-4 caracteristica left">
+
+				<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/seguridad.png" alt="">
+
+				<div class="info">
+					<h3 class="text-center">Vigilancia y portón eléctrico</h3>
+				</div><!-- caja -->
+
+			</div><!-- quinto -->
+
+		</div><!-- clearfix -->
 
 		<div class="columna c-8 small-12 content">
 
@@ -108,9 +118,13 @@
 
 		<div class="columna c-4 small-12">
 
-			<a class="boton alto escoge margin-bottom" href="#">Escoge tu casa</a>
+			<a class="boton alto full escoge margin-bottom" href="#">
+				<span>Escoge tu casa</span>
+			</a>
 
-			<a class="boton alto personaliza margin-bottom" href="#">Personaliza tu casa</a>
+			<a class="boton alto full personaliza margin-bottom" href="#">
+				<span>Personaliza tu casa</span>
+			</a>
 
 			<form class="full forma-cita caja" action="">
 
