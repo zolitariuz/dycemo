@@ -16,16 +16,36 @@
 
 // ** Ajustes de MySQL. Solicita estos datos a tu proveedor de alojamiento web. ** //
 /** El nombre de tu base de datos de WordPress */
-define('DB_NAME', 'db527205041');
+// Acceso web
+//define('DB_NAME', 'db527205041');
 
 /** Tu nombre de usuario de MySQL */
-define('DB_USER', 'dbo527205041');
+//define('DB_USER', 'dbo527205041');
 
 /** Tu contraseña de MySQL */
-define('DB_PASSWORD', 'Dyc3m0!');
+//define('DB_PASSWORD', 'Dyc3m0!');
 
 /** Host de MySQL (es muy probable que no necesites cambiarlo) */
-define('DB_HOST', 'db527205041.db.1and1.com');
+//define('DB_HOST', 'db527205041.db.1and1.com');
+
+/** Codificación de caracteres para la base de datos. */
+//define('DB_CHARSET', 'utf8');
+
+/** Cotejamiento de la base de datos. No lo modifiques si tienes dudas. */
+//define('DB_COLLATE', '');
+
+// Acceso local
+/** El nombre de tu base de datos de WordPress */
+define('DB_NAME', 'dycemo');
+
+/** Tu nombre de usuario de MySQL */
+define('DB_USER', 'root');
+
+/** Tu contraseña de MySQL */
+define('DB_PASSWORD', 'root');
+
+/** Host de MySQL (es muy probable que no necesites cambiarlo) */
+define('DB_HOST', 'localhost');
 
 /** Codificación de caracteres para la base de datos. */
 define('DB_CHARSET', 'utf8');

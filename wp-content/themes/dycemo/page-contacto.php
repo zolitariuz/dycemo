@@ -51,10 +51,12 @@
 
 				<div class="mapa-dycemo">
 					<h3>Ubicación</h3>
-
+					<!-- mapa
 					<div class="mapa">
 						<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=Guadalajara+94B,+Roma+Norte,+Cuauht%C3%A9moc,+Ciudad+de+M%C3%A9xico,+M%C3%A9xico&amp;aq=0&amp;oq=Guadalajara+94,+M%C3%A9xico&amp;sll=37.0625,-95.677068&amp;sspn=49.757664,92.988281&amp;ie=UTF8&amp;hq=&amp;hnear=Guadalajara+94B,+Cuauht%C3%A9moc,+Ciudad+de+M%C3%A9xico,+Distrito+Federal,+M%C3%A9xico&amp;t=m&amp;z=14&amp;ll=19.416597,-99.171906&amp;output=embed"></iframe>
-					</div><!-- mapa -->
+					</div> -->
+
+					<div class="mapa" id="mapa"></div>
 
 				</div><!-- caja mapa-dycemo -->
 			</div>
