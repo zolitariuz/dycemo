@@ -16,19 +16,19 @@
 			<div class="columna c-6">
 
 				<h3>Dirección</h3>
-				<p>Constructora Dycemo S.A. de C.V. Cerrada de Presa Escolta # 42-6 San Jerónimo, Lídice, C.P. 10200</p>
+				<p><?php echo get_post_meta($post->ID, '_direccion_meta', true); ?></p>
 
 				<h3>Teléfonos</h3>
 				<p>
-					5683-6800<br />
-					5668-7856<br />
+					<?php echo get_post_meta($post->ID, '_telefono1_meta', true); ?><br />
+					<?php echo get_post_meta($post->ID, '_telefono2_meta', true); ?><br />
 				</p>
 
 				<h3>Ventas</h3>
-				<p>5668-7848</p>
+				<p><?php echo get_post_meta($post->ID, '_ventas_meta', true); ?></p>
 
 				<h3>Horario de atención</h3>
-				<p>Lunes-Viernes 9:00 a 17:00</p>
+				<p><?php echo get_post_meta($post->ID, '_horario_meta', true); ?></p>
 
 			</div><!-- columna -->
 
@@ -38,12 +38,12 @@
 				<div class="redes">
 					<h3>Redes Sociales</h3>
 
-					<a class="clearfix" href="https://twitter.com/CDycemo" target="_blank">
+					<a class="clearfix" href="<?php echo get_post_meta($post->ID, '_twitter_meta', true); ?>" target="_blank">
 						<img class="left" src="<?php echo THEMEPATH; ?>images/tw.png" alt="">
 						<p class="left">@CDycemo</p>
 					</a>
 
-					<a class="clearfix" href="https://www.facebook.com/C.dycemo" target="_blank">
+					<a class="clearfix" href="<?php echo get_post_meta($post->ID, '_facebook_meta', true); ?>" target="_blank">
 						<img class="left" src="<?php echo THEMEPATH; ?>images/fb.png" alt="">
 						<p class="left">/C.dycemo</p>
 					</a>

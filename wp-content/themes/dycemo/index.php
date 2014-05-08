@@ -28,26 +28,26 @@
 		<hr class="columna c-12">
 
 		<?php
-			$noticiasArgs = array(
-				'category_name' 	=> 'noticias',
-				'posts_per_page' 	=> 2
-			);
-			$noticiasQuery = new WP_Query($noticiasArgs);
+		$noticiasArgs = array(
+			'category_name' 	=> 'noticias',
+			'posts_per_page' 	=> 2
+		);
+		$noticiasQuery = new WP_Query($noticiasArgs);
 
-			if( $noticiasQuery->have_posts() ) : while( $noticiasQuery->have_posts() ) : $noticiasQuery->the_post(); ?>
+		if( $noticiasQuery->have_posts() ) : while( $noticiasQuery->have_posts() ) : $noticiasQuery->the_post(); ?>
 
-				<div class="post columna c-4 medium-6 small-12">
+			<div class="post columna c-4 medium-6 small-12">
 
-					<?php the_post_thumbnail( 'large' ); ?>
+				<?php the_post_thumbnail( 'large' ); ?>
 
-					<div class="caja info">
-						<h3><?php the_title(); ?></h3>
-						<p><?php the_excerpt(); ?></p>
-					</div><!-- caja -->
+				<div class="caja info">
+					<h3><?php the_title(); ?></h3>
+					<p><?php the_excerpt(); ?></p>
+				</div><!-- caja -->
 
-				</div><!-- tercio -->
+			</div><!-- tercio -->
 
-			<?php endwhile; endif; wp_reset_query(); ?>
+		<?php endwhile; endif; wp_reset_query(); ?>
 
 
 		<form class="forma-cita forma columna c-4 medium-12 caja">

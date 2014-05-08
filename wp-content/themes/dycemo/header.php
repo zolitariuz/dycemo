@@ -60,7 +60,7 @@
 						</li>
 
 						<li>
-							<a <?php if ( is_page('en-venta') ){ echo 'class="active"'; } ?> href="<?php echo site_url('en-venta'); ?>">En venta</a>
+							<a <?php if ( 'en-venta' == get_post_type() ){ echo 'class="active"'; } ?> href="<?php echo site_url('en-venta'); ?>">En venta</a>
 						</li>
 
 						<li>
