@@ -122,9 +122,7 @@
 			endwhile; endif; wp_reset_query();
 			?>
 
-			<div class="mapa">
-				<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=19.332749,-99.21578&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=49.757664,92.988281&amp;ie=UTF8&amp;t=m&amp;z=14&amp;ll=19.332749,-99.21578&amp;output=embed"></iframe>
-			</div>
+			<div class="mapa" id="mapa"></div>
 
 		</div><!-- content -->
 

@@ -58,7 +58,7 @@
 			}
 	    });
 
-	    $('.forma-cita').validate({
+	     $('.forma-cita').validate({
 	   		rules: {
 				nombre: { notEqualTo: 'Nombre' },
 				email: { notEqualTo: 'E-mail' },
@@ -66,6 +66,9 @@
 				fecha: { notEqualTo: 'Escoge la fecha' }
 			}
 	    });
+
+	    // mapa google
+		creaMapa();
 
 	});
 
@@ -167,5 +170,39 @@ function toggleMenuMovil(){
 			$('.menu').slideUp('fast');
 		}
 	});
+}
+
+function creaMapa (){
+	var styles = [
+		{
+		  stylers: [
+			{ hue: "#53bfd2" }
+		  ]
+		}
+	];
+
+	function initialize() {
+		var notMobile = $(document).width() > 480 ? true : false;
+		var lat = 19.331175;
+		var lng = -99.221508;
+		var centro = new google.maps.LatLng(lat, lng);
+		var mapOptions = {
+			zoom: 15,
+			center: centro,
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			styles: styles,
+			scrollwheel: false,
+			draggable: notMobile
+		}
+
+		var map = new google.maps.Map(document.getElementById('mapa'), mapOptions);
+
+		var marker = new google.maps.Marker({
+		    position: centro,
+		    map: map,
+		    title:"Constructora Dycemo"
+		});
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
 }
 
