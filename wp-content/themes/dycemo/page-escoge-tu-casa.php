@@ -2,19 +2,19 @@
 
 	<div class="width clearfix">
 
-		<div class="columna c-4 escoge-botones">
+		<div class="columna c-4 medium-12 escoge-botones">
 
-			<a href="#" data-seccion="plano" class="boton tabs block full text-center alto margin-bottom">Plano</a>
+			<a href="#" data-seccion="plano" class="boton tabs block columna c-12 medium-3 text-center alto margin-bottom">Plano</a>
 
-			<a href="#" data-seccion="casa-1" class="boton tabs block full text-center alto margin-bottom">Casa 1</a>
+			<a href="#" data-seccion="casa-1" class="boton tabs block columna c-12 medium-3 text-center alto margin-bottom">Casa 1</a>
 
-			<a href="#" data-seccion="casa-2" class="boton tabs block full text-center alto margin-bottom">Casa 2</a>
+			<a href="#" data-seccion="casa-2" class="boton tabs block columna c-12 medium-3 text-center alto margin-bottom">Casa 2</a>
 
-			<a href="#" data-seccion="casa-3" class="boton tabs block full text-center alto margin-bottom">Casa 3</a>
+			<a href="#" data-seccion="casa-3" class="boton tabs block columna c-12 medium-3 text-center alto margin-bottom">Casa 3</a>
 
 		</div><!-- columna c-4 -->
 
-		<div class="margin-bottom columna c-8 content-tabs">
+		<div class="margin-bottom columna c-8 medium-12 content-tabs">
 
 			<div class="tab plano abierto" data-seccion="plano">
 				<img src="<?php echo THEMEPATH; ?>images/slide-pinos-01.jpg" alt="">
