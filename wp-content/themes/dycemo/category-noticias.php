@@ -2,43 +2,17 @@
 
 	<div class="width clearfix">
 
-		<div class="caja clearfix margin-bottom">
-
-			<?php
-				$home = get_page_by_title( 'home' );
-				$homeId = $home->ID;
-				$homeContent = $home->post_content;
-			?>
-
-			<div class="columna c-6 medium-12">
-				<?php echo get_the_post_thumbnail( $homeId ); ?>
-			</div><!-- mitad -->
-
-			<div class="columna c-6 medium-12">
-
-				<?php echo wpautop( $homeContent ); ?>
-
-				<div class="z"></div>
-
-			</div><!-- columna c-6 -->
-		</div><!-- caja -->
-
 		<div class="clear"></div>
 
 		<hr class="columna c-12">
 
 		<?php
-		$noticiasArgs = array(
-			'category_name' 	=> 'noticias',
-			'posts_per_page' 	=> 2
-		);
-		$noticiasQuery = new WP_Query($noticiasArgs);
 
-		if( $noticiasQuery->have_posts() ) : while( $noticiasQuery->have_posts() ) : $noticiasQuery->the_post(); ?>
+		if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
 			<div class="post columna c-4 medium-6 small-12">
 
-				<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'large' ); ?></a>
+				<a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail( 'large' ); ?></a>
 
 				<div class="caja info">
 					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
