@@ -16,6 +16,9 @@
 		<!--Webfonts: -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
+		<!--Font Awesome-->
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
 
 
 		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -40,13 +43,17 @@
 
 			<div class="width clearfix">
 
-				<h1 class="columna c-2">
+				<h1 class="columna c-2 medium-3 small-4">
 					<a href="<?php echo home_url(); ?>">
 						<img src="<?php echo THEMEPATH; ?>images/logo.png" alt="Dycemo" />
 					</a>
 				</h1>
 
-				<nav class="columna c-6 menu right">
+				<div class="columna right" id="btn-movil">
+					<a href="#"><i class="fa fa-bars"></i></a>
+				</div>
+			
+				<nav class="columna c-8 medium-12 menu right">
 					<ul class="clearfix">
 						<li>
 							<a <?php if ( is_category('noticias') ){ echo 'class="active"'; } ?> href="<?php echo site_url('d/noticias'); ?>">Noticias</a>

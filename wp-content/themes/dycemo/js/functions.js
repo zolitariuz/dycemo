@@ -4,6 +4,10 @@
 
 	$(function(){
 
+		// Toggle menu movil
+		toggleMenuMovil();
+		mostrarMenu();
+
 	    //Fancybox
 	    $('.fancybox').fancybox({
 	    	beforeShow : function() {
@@ -99,6 +103,7 @@ function toggleFechaCita(){
 	});
 }
 
+
 function procesaContacto(){
 	$('.forma-contacto input[type="submit"]').on('click', function(e){
 		var nombre = $('input[name="nombre"').val();
@@ -122,6 +127,30 @@ function procesaContacto(){
 		  		$('.forma').html('<p>Gracias por contactarnos '+json.nombre+', en breve nos pondremos en contacto contigo.</p>');
 		  	}
 		});
+	});
+}
+
+function mostrarMenu() {
+	$(window).resize(function(){
+		console.log($(window).width());
+		if ($(window).width() > 768) 
+	   		$('.menu').attr('style', 'display: block');
+	   	else
+	   		$('.menu').attr('style', 'display: none');
+
+	});
+}
+
+function toggleMenuMovil(){
+
+	$('#btn-movil').on('click', function(e){
+		e.preventDefault();
+		console.log('muestra menu');
+		if($('.menu').css('display')=='none'){ 
+			$('.menu').slideDown('fast');
+		} else {
+			$('.menu').slideUp('fast');
+		}
 	});
 }
 
