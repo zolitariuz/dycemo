@@ -8,8 +8,8 @@
 				<p>Constuctora Dycemo S.A. de C.V.</p>
 				<p>Tel. 5668-7848</p>
 			</div>
-			<a class="columna c-4 medium-12 small-margin-bottom boton" href="#">Aviso de privacidad</a>
-			<a class="columna c-4 medium-12 small-margin-bottom boton" href="#">Contacto</a>
+			<a class="columna c-4 medium-12 small-margin-bottom boton" href="<?php echo site_url('aviso-de-privacidad'); ?>">Aviso de privacidad</a>
+			<a class="columna c-4 medium-12 small-margin-bottom boton" href="<?php echo site_url('contacto'); ?>">Contacto</a>
 		</div><!--Termina Footer Wrap-->
 	</footer>
 
@@ -18,7 +18,7 @@
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 	<?php wp_footer(); ?>
-	
+
 	<!--Analytics Google: -->
 	<script type="text/javascript">
 
