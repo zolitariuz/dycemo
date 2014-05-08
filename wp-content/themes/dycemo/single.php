@@ -2,18 +2,12 @@
 
 	<div class="width clearfix">
 
-		<div class="clear"></div>
-
-		<hr class="columna c-12">
-
-		<?php ?>
-
 		<div class="post columna c-12">
-			<div class="columna c-6">
+			<div class="columna c-6 small-12">
 				<?php the_post_thumbnail( 'large' ); ?>
 			</div>
 
-			<div class="caja info columna c-6">
+			<div class="caja info columna c-6 small-12">
 				<h3><?php the_title(); ?></h3>
 				<p><?php the_content(); ?></p>
 			</div><!-- caja -->

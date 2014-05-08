@@ -322,8 +322,8 @@ h1{ margin-top: @margen !important; margin-bottom: @margen !important;
 
 .menu{ position: relative; top: 42px; display: block;
 	ul{ margin: 0; list-style: none;
-		li{ margin: 0 10px; padding: 5px; text-transform: uppercase; float: left;
-			a{ display: block; width: 100%; height: 100%; .sans-medium( 18px, 2px); color: @azul_claro; text-decoration: none; .transition( all 0.3s ease );
+		li{ width: 23%; margin: 0 1%; padding: (@margen/4); text-align: center; text-transform: uppercase; float: left;
+			a{ display: block; width: 100%; height: 100%; .sans-medium( 1.3em, 1.3em); color: @azul_claro; text-decoration: none; .transition( all 0.3s ease );
 				&:hover{ color: #fff; }
 				&.active{ color: #fff; border-bottom:solid 1px @azul_claro; }
 			}
@@ -447,7 +447,7 @@ footer{ padding: 10px 0; background: @cafe_obscuro;
 @media only screen and (max-width : 1024px) {
 	.width{ width: 90%; }
 
-	.menu { display: block; 
+	.menu { display: block;
 		ul {
 			li {
 				a { .sans-medium( 16px, 22px);  }
@@ -457,7 +457,7 @@ footer{ padding: 10px 0; background: @cafe_obscuro;
 }
 
 @media only screen and (max-device-width : 1024px) {
-	
+
 }
 
 @media only screen and (max-width : 768px) {
@@ -509,17 +509,19 @@ footer{ padding: 10px 0; background: @cafe_obscuro;
 		div:first-child { position: relative; }
 	}
 
-	.menu { display: none; margin:0; float: none; top:0; 
-		ul { width:100%; 
-			li {  margin: 0; padding: 0 0 (@margen/2) 0; float: none;
-				a { display: block; width:100%; padding: (@margen/2) (@margen/2) 0 (@margen/2); .sans-medium( 16px, 22px); text-align: center; border-top: 1px @azul_claro solid;  
+	.menu { display: none; margin:0; float: none; top:0;
+		ul { width:100%;
+			li { width: 100%;  margin: 0; padding: 0 0 (@margen/2) 0; float: none;
+				a { display: block; width:100%; padding: (@margen/2) (@margen/2) 0 (@margen/2); .sans-medium( 16px, 22px); text-align: center; border-top: 1px @azul_claro solid;
+					&.active{ border-bottom: none; }
 				}
 			}
 		}
 	}
 
+
 	#btn-movil { display: block; margin-top: @margen; position: absolute; top: 0; right:0 ;
-		a { font-size: 3em; 
+		a { font-size: 3em;
 			&:hover { color: @claro; }
 		}
 	}
@@ -585,7 +587,13 @@ footer{ padding: 10px 0; background: @cafe_obscuro;
 
 	.small-margin-bottom{ margin-bottom: @margen !important; }
 
-	.boton.alto{  .sans-medium(1em, 1.5em); }
+	.boton.alto{ height: (@margen*2); .sans-medium(1em, 1.5em); }
+
+	h3{ .bitter-regular(1.8em, 2em); }
+
+	.info{
+		h3{ .bitter-regular(1em, 1.2em); }
+	}
 
 }
 

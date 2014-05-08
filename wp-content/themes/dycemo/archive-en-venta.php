@@ -142,14 +142,14 @@
 
 				<h3 class="texto-centrado">Haz una cita</h3>
 
-				<input type="text" name="nombre" value="Nombre">
-				<input type="email" name="email" value="E-mail">
-				<input type="tel" name="celular" value="Celular">
+				<input class="required" type="text" id="nombre" name="nombre" value="Nombre">
+				<input class="required email" type="email" name="email" value="E-mail">
+				<input class="required" type="tel" name="celular" value="Celular">
 
 				<input class="left" name="agendar" type="checkbox">
 				<label class="left" for="agendar">Quiero agendar una cita</label>
 
-				<input type="text" name="fecha" id="datepicker" class="margin-bottom" value="Escoge la fecha">
+				<input type="text" name="fecha" id="datepicker" class="margin-bottom required" value="Escoge la fecha">
 
 				<input type="submit" value="enviar">
 

@@ -58,7 +58,7 @@
 					<input type="email" name="email" value="E-mail">
 					<input type="tel" name="celular" value="Celular">
 
-					<select name="casa" class="chosen-casa columna c-8" name="chosen">
+					<select name="casa" class="chosen-casa columna c-8 small-12 small-margin-bottom" name="chosen">
 						<?php foreach ($casasArray as $unacasa) { ?>
 							<option value="<?php echo $unacasa; ?>">Casa <?php echo $unacasa; ?></option>
 						<?php } ?>

@@ -2,10 +2,6 @@
 
 	<div class="width clearfix">
 
-		<div class="clear"></div>
-
-		<hr class="columna c-12">
-
 		<?php
 
 		if( have_posts() ) : while( have_posts() ) : the_post(); ?>

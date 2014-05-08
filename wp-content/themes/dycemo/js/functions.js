@@ -58,6 +58,15 @@
 			}
 	    });
 
+	    $('.forma-cita').validate({
+	   		rules: {
+				nombre: { notEqualTo: 'Nombre' },
+				email: { notEqualTo: 'E-mail' },
+				celular: { notEqualTo: 'Celular' },
+				fecha: { notEqualTo: 'Escoge la fecha' }
+			}
+	    });
+
 	});
 
 })(jQuery);
@@ -139,7 +148,7 @@ function procesaContacto(){
 function mostrarMenu() {
 	$(window).resize(function(){
 		console.log($(window).width());
-		if ($(window).width() > 768) 
+		if ($(window).width() > 768)
 	   		$('.menu').attr('style', 'display: block');
 	   	else
 	   		$('.menu').attr('style', 'display: none');
@@ -152,7 +161,7 @@ function toggleMenuMovil(){
 	$('#btn-movil').on('click', function(e){
 		e.preventDefault();
 		console.log('muestra menu');
-		if($('.menu').css('display')=='none'){ 
+		if($('.menu').css('display')=='none'){
 			$('.menu').slideDown('fast');
 		} else {
 			$('.menu').slideUp('fast');

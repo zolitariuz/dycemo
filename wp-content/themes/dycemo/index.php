@@ -42,7 +42,7 @@
 
 				<div class="caja info">
 					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					<p><a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a></p>
+					<p><?php the_excerpt(); ?></p>
 				</div><!-- caja -->
 
 			</div><!-- tercio -->
