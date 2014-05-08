@@ -198,7 +198,7 @@ figure {margin: 0;}
 
 //layout
 .container{ min-width: 300px; }
-.width{ width: 70%; min-width: 300px; margin: 0 auto @margen auto; }
+.width{ width: 75%; min-width: 300px; margin: 0 auto @margen auto; }
 .full{ width: 100%;
   //img{ width: 100%; height: auto; }
 }
@@ -320,16 +320,18 @@ h1{ margin-top: @margen !important; margin-bottom: @margen !important;
 	}
 }
 
-.menu{ position: relative; top: 42px;
+.menu{ position: relative; top: 42px; display: block;
 	ul{ margin: 0; list-style: none;
 		li{ margin: 0 10px; padding: 5px; text-transform: uppercase; float: left;
-			a{ display: block; width: 100%; height: 100%; .sans-medium( 18px, 22px); color: @azul_claro; text-decoration: none; .transition( all 0.3s ease );
+			a{ display: block; width: 100%; height: 100%; .sans-medium( 18px, 2px); color: @azul_claro; text-decoration: none; .transition( all 0.3s ease );
 				&:hover{ color: #fff; }
 				&.active{ color: #fff; border-bottom:solid 1px @azul_claro; }
 			}
 		}
 	}
 }
+
+#btn-movil { display: none; }
 
 /*::::::::::::::::::::::::::: MAIN :::::::::::::::::::: */
 
@@ -444,10 +446,18 @@ footer{ padding: 10px 0; background: @cafe_obscuro;
 
 @media only screen and (max-width : 1024px) {
 	.width{ width: 90%; }
+
+	.menu { display: block; 
+		ul {
+			li {
+				a { .sans-medium( 16px, 22px);  }
+			}
+		}
+	}
 }
 
 @media only screen and (max-device-width : 1024px) {
-
+	
 }
 
 @media only screen and (max-width : 768px) {
@@ -491,11 +501,36 @@ footer{ padding: 10px 0; background: @cafe_obscuro;
 	.medium{ display: block; }
 	.no-medium{ display: none; }
 
+	.medium-margin-bottom{ margin-bottom: @margen !important; }
+
 	.medium-center{ margin-left: auto !important; margin-right: auto !important; float: none !important; }
 
 	h3{ .bitter-regular(1em, 1.2em); }
 
+	header {
+		div:first-child { position: relative; }
+	}
 
+	.menu { display: none; margin:0; float: none; top:0; 
+		ul { width:100%; 
+			li {  margin: 0; padding: 0 0 (@margen/2) 0; float: none;
+				a { display: block; width:100%; padding: (@margen/2) (@margen/2) 0 (@margen/2); .sans-medium( 16px, 22px); text-align: center; border-top: 1px @azul_claro solid;  
+				}
+			}
+		}
+	}
+
+	#btn-movil { display: block; margin-top: @margen; position: absolute; top: 0; right:0 ;
+		a { font-size: 3em; 
+			&:hover { color: @claro; }
+		}
+	}
+
+	footer {
+		div {
+			p { text-align: center; }
+		}
+	}
 
 }
 

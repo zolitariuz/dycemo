@@ -4,12 +4,12 @@
 	<?php if( ! is_page( 'contacto' ) ) {?>
 	<footer>
 		<div class="width clearfix">
-			<div class="columna c-4 medium-12 small-margin-bottom">
+			<div class="columna c-4 medium-12 medium-margin-bottom">
 				<p>Constuctora Dycemo S.A. de C.V.</p>
 				<p>Tel. 5668-7848</p>
 			</div>
-			<a class="columna c-4 medium-12 small-margin-bottom boton" href="<?php echo site_url('aviso-de-privacidad'); ?>">Aviso de privacidad</a>
-			<a class="columna c-4 medium-12 small-margin-bottom boton" href="<?php echo site_url('contacto'); ?>">Contacto</a>
+			<a class="columna c-4 medium-12 medium-margin-bottom boton" href="#">Aviso de privacidad</a>
+			<a class="columna c-4 medium-12 medium-margin-bottom boton" href="#">Contacto</a>
 		</div><!--Termina Footer Wrap-->
 	</footer>
 

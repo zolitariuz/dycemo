@@ -10,11 +10,11 @@
 				$homeContent = $home->post_content;
 			?>
 
-			<div class="columna c-6">
+			<div class="columna c-6 medium-12">
 				<?php echo get_the_post_thumbnail( $homeId ); ?>
 			</div><!-- mitad -->
 
-			<div class="columna c-6">
+			<div class="columna c-6 medium-12">
 
 				<?php echo wpautop( $homeContent ); ?>
 
@@ -36,7 +36,7 @@
 
 		if( $noticiasQuery->have_posts() ) : while( $noticiasQuery->have_posts() ) : $noticiasQuery->the_post(); ?>
 
-			<div class="post columna c-4">
+			<div class="post columna c-4 medium-6 small-12">
 
 				<?php the_post_thumbnail( 'large' ); ?>
 
@@ -50,7 +50,7 @@
 		<?php endwhile; endif; wp_reset_query(); ?>
 
 
-		<form class="forma-cita forma columna c-4 caja">
+		<form class="forma-cita forma columna c-4 medium-12 caja">
 
 			<h3 class="texto-centrado">Haz una cita</h3>
 
