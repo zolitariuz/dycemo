@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php
+	get_header();
+	the_post();
+?>
 
 	<div class="width">
 
@@ -6,18 +9,29 @@
 
 			<div class="span c-6 no-medium content">
 
-				<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/img_nosotros.jpg" alt="">
+				<?php
+					$attachmentsArgs = array(
+			            'post_type' => 'attachment',
+			            'posts_per_page' => -1,
+			            'post_parent' => $post->ID
+			        );
+			        $attachments = get_posts($attachmentsArgs);
 
-				<img class="imagen-100" src="<?php echo THEMEPATH; ?>images/blancaschemo.jpg" alt="">
+			        if ( $attachments ) {
+			            foreach ( $attachments as $attachment ) {
+			            	$imgUrl = wp_get_attachment_image_src($attachment->ID, 'full');
+			            	echo '<img src="'.$imgUrl[0].'" alt="">';
+			            }
+			        }
+				?>
+
+
 
 			</div>
 
 			<div class="columna c-6 medium-10 small-12 medium-center right">
 
-				<p>Nuestra historia empieza 33 años atrás cuando Dycemo fue fundada como una empresa familiar el 29 de Febrero de 1979. Desde entonces hemos mantenido los mismos valores y hemos trabajado para superar nuestros propios niveles de calidad, los cuales rigen nuestros procesos desde el inicio de la construcción hasta el momento de la entrega. También estamos muy orgullosos del grupo de personas que nos rodea y que, con el paso de los años han demostrado su profesionalismo y sobre todo su compromiso y pasión hacia ésta familia llamada DYCEMO. </p>
-				<p>A través de una sólida experiencia en el mercado nos hemos consolidado como una empresa inmobiliaria respetada dentro de la zona sur de la Ciudad de México. Somos especialistas y artesanos en lo que hacemos mejor y eso es la construcción de viviendas a nivel residencial, ubicadas principalmente en la colonia de San Jerónimo. </p>
-				<p>En nuestra empresa queremos ver a las personas crecer y por eso fomentamos una forma de trabajo respetuosa en la que cada integrante tiene una valiosa opinión con la cual podemos avanzar hacia algo mejor. Desde nuestros sabios maestros de obra, nuestros acertados administradores y asesores, hasta nuestros grandes arquitectos e ingenieros, todos somos parte del mismo proyecto y ayudamos a construir un mismo camino. Este camino tiene un único fin; "Entregarte el mejor producto y atenderte con el mejor servicio".</p>
-
+				<?php the_content();  ?>
 			</div>
 
 		</div>
@@ -28,30 +42,27 @@
 		<div class="portafolio clearfix">
 			<h3>Portafolio</h3>
 
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_01.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_01.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_02.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_02.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_03.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_03.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_04.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_04.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_05.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_05.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_06.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_06.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_07.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_07.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_08.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_08.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_09.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_09.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_10.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_10.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_11.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_11.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_12.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_12.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_13.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_13.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_14.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_14.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_15.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_15.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_16.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_16.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_17.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_17.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_18.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_18.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_19.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_19.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_20.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_20.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_22.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_22.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_25.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_25.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
-			<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo THEMEPATH; ?>images/portafolio/img_26.jpg"><img src="<?php echo THEMEPATH; ?>images/portafolio/thumb_26.jpg" alt="Lorem ipsum dolor sit amet consectetur adipiscing elit itaque rursus eadem ratione qua sum paulo ante." /></a>
+			<?php
+				$portafolio = get_page_by_title( 'portafolio' );
+				$portafolioId = $portafolio->ID;
 
+				$attachmentsArgs = array(
+		            'post_type' => 'attachment',
+		            'posts_per_page' => -1,
+		            'post_parent' => $portafolioId
+		        );
+		        $attachments = get_posts($attachmentsArgs);
+
+		        if ( $attachments ) {
+		            foreach ( $attachments as $attachment ) {
+		            	$fullUrl = wp_get_attachment_image_src($attachment->ID, 'full');
+		            	$thumbUrl = wp_get_attachment_image_src($attachment->ID, 'thumbnail');
+		            	$alt = get_post_meta($attachment->ID, '_wp_attachment_image_alt', true); ?>
+		            	<a class="fancybox block columna c-2 medium-3 small-6" rel="group" href="<?php echo $fullUrl[0]; ?>"><img src="<?php echo $thumbUrl[0]; ?>" alt="<?php echo $alt; ?>" /></a>
+
+		            <?php }
+		        }
+			?>
 		</div><!-- portafolio -->
 
 		<div class="clear"></div>
@@ -62,30 +73,23 @@
 			<div class="columna c-3 medium-6 small-12">
 
 				<h3 class="text-center">Misión</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verum esto: verbum ipsum voluptatis non habet dignitatem, nec nos fortasse intellegimus. Respondeat totidem verbis. Ex quo intellegitur officium medium quiddam esse, quod neque in bonis ponatur neque in contrariis.</p>
+				<p><?php echo get_post_meta($post->ID, '_mision_meta', true); ?></p>
 
 			</div><!-- cuarto -->
 
 			<div class="columna c-3 medium-6 small-12">
 
 				<h3 class="text-center">Visión</h3>
-				<p>Sit hoc ultimum bonorum, quod nunc a me defenditur; Plane idem, inquit, et maxima quidem, qua fieri nulla maior potest. Duo Reges: constructio interrete. Causa autem fuit huc veniendi ut quosdam hinc libros promerem. Illud dico, ea, quae dicat, praeclare inter se cohaerere.</p>
+				<p><?php echo get_post_meta($post->ID, '_vision_meta', true); ?></p>
 
 			</div><!-- cuarto -->
 
-			<div class="clear"></div>
+			<div class="clear-medium"></div>
 
 			<div class="columna c-3 medium-6 small-12">
 
 				<h3 class="text-center">Valores</h3>
-				<ul>
-					<li>Adipiscing elit</li>
-					<li>Verum esto</li>
-					<li>Stadia confecimus</li>
-					<li>Ultimum bonorum</li>
-					<li>Plane idem</li>
-					<li>Maxima quidem</li>
-				</ul>
+				<p><?php echo get_post_meta($post->ID, '_valores_meta', true); ?></p>
 
 			</div><!-- cuarto -->
 

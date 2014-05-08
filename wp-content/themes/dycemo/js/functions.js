@@ -26,6 +26,9 @@
 
 	    });
 
+	    //Recorrido virtauk
+	    $('.fitvids').fitVids();
+
 	    // Haz una cita
 	    toggleFechaCita();
 	    $( "#datepicker" ).datepicker();
@@ -33,7 +36,10 @@
 	    procesaContacto();
 
 	    //CHOSEN
-	    $('.chosen-casa').chosen();
+	    $('.chosen-casa').chosen({
+	    	disable_search_threshold: 100,
+			width: "31.2%"
+	    });
 
 	    $.validator.addMethod("notEqualTo", function(v, e, p) {
 			return this.optional(e) || v != p;
@@ -95,7 +101,7 @@ function toggleFechaCita(){
 		else{
 			$('#datepicker').removeClass('block');
 			$('#datepicker').addClass('hide');
-		} 	
+		}
 	});
 }
 
