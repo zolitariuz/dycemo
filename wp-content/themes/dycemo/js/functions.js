@@ -38,7 +38,7 @@
 	    //CHOSEN
 	    $('.chosen-casa').chosen({
 	    	disable_search_threshold: 100,
-			width: "31.2%"
+			width: "100%"
 	    });
 
 	    $.validator.addMethod("notEqualTo", function(v, e, p) {

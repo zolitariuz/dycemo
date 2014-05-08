@@ -52,18 +52,22 @@
 
 				?>
 
-				<form class="chosen" method="post" action="#">
+				<form class="forma-cita forma full caja">
 
-					<select class="chosen-casa columna c-8" name="chosen">
+					<input type="text" name="nombre" value="Nombre">
+					<input type="email" name="email" value="E-mail">
+					<input type="tel" name="celular" value="Celular">
+
+					<select name="casa" class="chosen-casa columna c-8" name="chosen">
 						<?php foreach ($casasArray as $unacasa) { ?>
-							<option value="<?php echo $unacasa; ?>"><?php echo $unacasa; ?></option>
+							<option value="<?php echo $unacasa; ?>">Casa <?php echo $unacasa; ?></option>
 						<?php } ?>
 					</select>
 
-					<input class="boton block columna c-4" type="submit" value="Quiero esta casa">
 
-				</form>
+					<input type="submit" value="enviar">
 
+				</form><!-- forma-cita -->
 
 			</div><!-- tab casa-1 -->
 
