@@ -512,7 +512,7 @@ footer{ padding: 10px 0; background: @cafe_obscuro;
 	.menu { display: none; margin:0; float: none; top:0;
 		ul { width:100%;
 			li { width: 100%;  margin: 0; padding: 0 0 (@margen/2) 0; float: none;
-				a { display: block; width:100%; padding: (@margen/2) (@margen/2) 0 (@margen/2); .sans-medium( 16px, 22px); text-align: center; border-top: 1px @azul_claro solid;
+				a { display: block; width:100%; padding: (@margen/2) 0 0 0; .sans-medium( 16px, 22px); text-align: center; border-top: 1px @azul_claro solid;
 					&.active{ border-bottom: none; }
 				}
 			}
@@ -520,7 +520,7 @@ footer{ padding: 10px 0; background: @cafe_obscuro;
 	}
 
 
-	#btn-movil { display: block; margin-top: @margen; position: absolute; top: 0; right:0 ;
+	#btn-movil { display: block; position: absolute; top: (@margen*2); right:0 ;
 		a { font-size: 3em;
 			&:hover { color: @claro; }
 		}

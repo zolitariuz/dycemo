@@ -122,7 +122,7 @@
 			endwhile; endif; wp_reset_query();
 			?>
 
-			<div class="mapa" id="mapa"></div>
+			<div class="mapa margin-bottom" id="mapa"></div>
 
 		</div><!-- content -->
 

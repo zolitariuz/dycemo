@@ -12,7 +12,7 @@
 
 		if( $personalizaQuery->have_posts() ) : while( $personalizaQuery->have_posts() ) : $personalizaQuery->the_post(); ?>
 
-			<div class="post columna c-4">
+			<div class="post columna c-4 medium-6 small-12">
 				<?php the_post_thumbnail( 'large' ); ?>
 
 				<div class="caja info">
