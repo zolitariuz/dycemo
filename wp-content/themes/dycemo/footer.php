@@ -1,19 +1,24 @@
 
-	</div><!--main -->
+		</div><!--main -->
 
-	<?php if( ! is_page( 'contacto' ) ) {?>
-	<footer>
-		<div class="width clearfix">
-			<div class="columna c-4 medium-12 medium-margin-bottom">
-				<p>Constuctora Dycemo S.A. de C.V.</p>
-				<p>Tel. 5668-7848</p>
-			</div>
-			<a class="columna c-4 medium-12 medium-margin-bottom boton" href="#">Aviso de privacidad</a>
-			<a class="columna c-4 medium-12 medium-margin-bottom boton" href="#">Contacto</a>
-		</div><!--Termina Footer Wrap-->
-	</footer>
-
-	<?php } ?>
+		<?php if( ! is_page( 'contacto' ) ) {?>
+		<footer>
+			<div class="width clearfix">
+				<div class="columna c-4 medium-12 medium-margin-bottom">
+					<p>Constuctora Dycemo S.A. de C.V.</p>
+					<p>Tel. 5668-7848</p>
+				</div>
+				<a class="columna c-4 medium-12 medium-margin-bottom boton right" href="<?php echo site_url('contacto'); ?>">Contacto</a>
+			</div><!--Termina Footer Wrap-->
+		</footer>
+		<?php } else { ?>
+		<footer>
+			<div class="width clearfix">
+				<a class="block columna c-4 medium-12 medium-margin-bottom boton center" href="#">Aviso de privacidad</a>
+			</div><!--Termina Footer Wrap-->
+		</footer>
+		<?php } ?>
+	</div><!-- container -->
 
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>

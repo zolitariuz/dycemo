@@ -2,9 +2,11 @@
 
 	<div class="width clearfix">
 
-		<div class="columna c-4 medium-12 escoge-botones">
+		<h2 class="text-center">Escoge tu casa</h2>
 
-			<a href="#" data-seccion="plano" class="boton tabs block columna c-12 medium-3 text-center alto margin-bottom">Plano</a>
+		<div class="columna c-2 medium-12 escoge-botones">
+
+			<a href="#" data-seccion="plano" class="boton tabs block columna c-12 medium-3 text-center alto margin-bottom activo">Plano</a>
 
 			<a href="#" data-seccion="casa-1" class="boton tabs block columna c-12 medium-3 text-center alto margin-bottom">Casa 1</a>
 
@@ -14,7 +16,7 @@
 
 		</div><!-- columna c-4 -->
 
-		<div class="margin-bottom columna c-8 medium-12 content-tabs">
+		<div class="margin-bottom columna c-10 medium-12 content-tabs">
 
 			<div class="tab plano abierto" data-seccion="plano">
 				<?php
@@ -44,15 +46,15 @@
 				<div class="tab cerrado" data-seccion="casa-<?php echo $numeroCasa; ?>">
 
 				<?php
-					the_post_thumbnail('full');
+					the_post_thumbnail('full', array('class' => 'margin-bottom'));
 					the_content();
 
 					$casas = get_post_meta($post->ID, '_casas_meta', true);
 					$casasArray = explode(', ', $casas);
-
 				?>
 
 				<form class="forma-cita forma full caja">
+					<p>Dejanos tus datos y dinos que casa quieres.</p>
 
 					<input type="text" name="nombre" value="Nombre">
 					<input type="email" name="email" value="E-mail">

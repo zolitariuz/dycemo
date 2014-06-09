@@ -2,6 +2,8 @@
 
 	<div class="width clearfix">
 
+		<h2 class="text-center">Contacto</h2>
+
 		<form class="forma-contacto columna c-6 medium-10 small-12 forma caja margin-bottom medium-center" action="cotacto-recibido" method="post">
 			<input type="text" name="nombre" class="required text" value="Nombre" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
 			<input type="email" name="email" id="email" class="required" value="E-mail" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
@@ -15,17 +17,14 @@
 
 			<div class="columna c-6">
 
-				<h3>Dirección</h3>
-				<p><?php echo get_post_meta($post->ID, '_direccion_meta', true); ?></p>
+				<h3>Ventas</h3>
+				<p><?php echo get_post_meta($post->ID, '_ventas_meta', true); ?></p>
 
 				<h3>Teléfonos</h3>
 				<p>
 					<?php echo get_post_meta($post->ID, '_telefono1_meta', true); ?><br />
 					<?php echo get_post_meta($post->ID, '_telefono2_meta', true); ?><br />
 				</p>
-
-				<h3>Ventas</h3>
-				<p><?php echo get_post_meta($post->ID, '_ventas_meta', true); ?></p>
 
 				<h3>Horario de atención</h3>
 				<p><?php echo get_post_meta($post->ID, '_horario_meta', true); ?></p>
@@ -35,6 +34,10 @@
 			<div class="span c-1">&nbsp;</div>
 
 			<div class="columna c-5">
+
+				<h3>Dirección</h3>
+				<p><?php echo get_post_meta($post->ID, '_direccion_meta', true); ?></p>
+
 				<div class="redes">
 					<h3>Redes Sociales</h3>
 
@@ -49,21 +52,14 @@
 					</a>
 				</div><!-- caja redes -->
 
-				<div class="mapa-dycemo">
-					<h3>Ubicación</h3>
-					<!-- mapa
-					<div class="mapa">
-						<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=Guadalajara+94B,+Roma+Norte,+Cuauht%C3%A9moc,+Ciudad+de+M%C3%A9xico,+M%C3%A9xico&amp;aq=0&amp;oq=Guadalajara+94,+M%C3%A9xico&amp;sll=37.0625,-95.677068&amp;sspn=49.757664,92.988281&amp;ie=UTF8&amp;hq=&amp;hnear=Guadalajara+94B,+Cuauht%C3%A9moc,+Ciudad+de+M%C3%A9xico,+Distrito+Federal,+M%C3%A9xico&amp;t=m&amp;z=14&amp;ll=19.416597,-99.171906&amp;output=embed"></iframe>
-					</div> -->
-
-					<div class="mapa" id="mapa"></div>
-
-				</div><!-- caja mapa-dycemo -->
 			</div>
 
+			<div class="mapa-dycemo">
+				<h3>Ubicación</h3>
+				<div class="mapa" id="mapa"></div>
+			</div><!-- caja mapa-dycemo -->
+
 		</div><!-- columna c-6 -->
-
-
 
 	</div><!-- width -->
 

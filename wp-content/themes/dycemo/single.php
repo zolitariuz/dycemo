@@ -8,12 +8,11 @@
 			</div>
 
 			<div class="caja info columna c-6 small-12">
-				<h3><?php the_title(); ?></h3>
+				<h2><?php the_title(); ?></h2>
 				<p><?php the_content(); ?></p>
 			</div><!-- caja -->
 
 		</div><!-- tercio -->
-
 
 		<form class="forma-cita forma columna c-6 medium-12 caja">
 

@@ -1,9 +1,8 @@
-<?php
-	get_header();
-?>
-
+<?php get_header(); ?>
 
 	<div class="width clearfix">
+
+		<h2 class="text-center">En venta</h2>
 
 		<a class="boton tabs alto columna c-4 activo" data-seccion="galeria" href="#">
 			<span>Galería</span>

@@ -2,6 +2,8 @@
 
 	<div class="width clearfix">
 
+		<h2 class="text-center" >Noticias</h2>
+
 		<?php
 
 		if( have_posts() ) : while( have_posts() ) : the_post(); ?>

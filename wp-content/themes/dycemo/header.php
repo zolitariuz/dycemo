@@ -38,42 +38,43 @@
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));</script>
 
+		<div class="container">
 
-		<header>
+			<header>
 
-			<div class="width clearfix">
+				<div class="width clearfix">
 
-				<h1 class="columna c-2 medium-3 small-4">
-					<a href="<?php echo home_url(); ?>">
-						<img src="<?php echo THEMEPATH; ?>images/logo.png" alt="Dycemo" />
-					</a>
-				</h1>
+					<h1 class="columna c-2 medium-3 small-4">
+						<a href="<?php echo home_url(); ?>">
+							<img src="<?php echo THEMEPATH; ?>images/logo.png" alt="Dycemo" />
+						</a>
+					</h1>
 
-				<div class="columna right" id="btn-movil">
-					<a href="#"><i class="fa fa-bars"></i></a>
-				</div>
+					<div class="columna right" id="btn-movil">
+						<a href="#"><i class="fa fa-bars"></i></a>
+					</div>
 
-				<nav class="columna c-8 medium-12 menu right">
-					<ul class="clearfix">
-						<li>
-							<a <?php if ( is_category('noticias') ){ echo 'class="active"'; } ?> href="<?php echo site_url('d/noticias'); ?>">Noticias</a>
-						</li>
+					<nav class="columna c-8 medium-12 menu right">
+						<ul class="clearfix">
+							<li>
+								<a <?php if ( is_category('noticias') OR in_category('noticias') ){ echo 'class="active"'; } ?> href="<?php echo site_url('d/noticias'); ?>">Noticias</a>
+							</li>
 
-						<li>
-							<a <?php if ( 'en-venta' == get_post_type() ){ echo 'class="active"'; } ?> href="<?php echo site_url('en-venta'); ?>">En venta</a>
-						</li>
+							<li>
+								<a <?php if ( 'en-venta' == get_post_type() ){ echo 'class="active"'; } ?> href="<?php echo site_url('en-venta'); ?>">En venta</a>
+							</li>
 
-						<li>
-							<a <?php if ( is_page('nosotros') ){ echo 'class="active"'; } ?> href="<?php echo site_url('nosotros'); ?>">Nosotros</a>
-						</li>
+							<li>
+								<a <?php if ( is_page('nosotros') ){ echo 'class="active"'; } ?> href="<?php echo site_url('nosotros'); ?>">Nosotros</a>
+							</li>
 
-						<li class="last">
-							<a <?php if ( is_page('contacto') ){ echo 'class="active"'; } ?> href="<?php echo site_url('contacto'); ?>">Contacto</a>
-						</li>
-					</ul>
-				</nav>
-			</div><!-- width -->
+							<li class="last">
+								<a <?php if ( is_page('contacto') ){ echo 'class="active"'; } ?> href="<?php echo site_url('contacto'); ?>">Contacto</a>
+							</li>
+						</ul>
+					</nav>
+				</div><!-- width -->
 
-		</header>
+			</header>
 
-		<div class="main">
+			<div class="main">

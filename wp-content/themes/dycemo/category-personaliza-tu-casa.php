@@ -2,6 +2,8 @@
 
 	<div class="width clearfix">
 
+		<h2 class="text-center">Personaliza tu casa</h2>
+
 		<?php
 		$personalizaArgs = array(
 			'post_type' 		=> 'en-venta',

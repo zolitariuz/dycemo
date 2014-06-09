@@ -23,7 +23,7 @@
 
 		// scripts
 		wp_enqueue_script( 'plugins', JSPATH.'plugins.min.js', array('jquery'), '1.0', true );
-		wp_enqueue_script( 'functions', JSPATH.'functions.min.js', array('plugins'), '1.0', true );
+		wp_enqueue_script( 'functions', JSPATH.'functions.js', array('plugins'), '1.0', true );
 
 		// localize scripts
 		wp_localize_script( 'functions', 'ajax_url', admin_url('admin-ajax.php') );
@@ -258,7 +258,7 @@
 		if($fecha == '')
 			$fecha = 'sin fecha';
 
-		$to = 'miguel@pcuervo.com';
+		$to = 'ventas@dycemo.com';
 		$subject = $nombre.' quiere agendar una cita';
 		$headers = 'From: My Name <miguel@pcuervo.com>' . "\r\n";
 		$message = '<html><body>';

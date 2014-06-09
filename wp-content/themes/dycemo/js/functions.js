@@ -12,9 +12,7 @@
 	    $('.fancybox').fancybox({
 	    	beforeShow : function() {
 		        var alt = this.element.find('img').attr('alt');
-
 		        this.inner.find('img').attr('alt', alt);
-
 		        this.title = alt;
 		    }
 	    });
@@ -23,6 +21,9 @@
 	    var seccion;
 	    $('.tabs').on('click', function(){
 
+	    	$('.tabs').removeClass('activo');
+	    	$(this).addClass('activo');
+
 	    	seccion = $(this).data('seccion');
 
 	    	$('.content-tabs > .tab').hide();
@@ -30,7 +31,7 @@
 
 	    });
 
-	    //Recorrido virtauk
+	    //Recorrido virtaul
 	    $('.fitvids').fitVids();
 
 	    // Haz una cita
@@ -45,6 +46,7 @@
 			width: "100%"
 	    });
 
+	    //Validación
 	    $.validator.addMethod("notEqualTo", function(v, e, p) {
 			return this.optional(e) || v != p;
 		}, 'Por favor introduce un valor distinto al default.');
@@ -69,6 +71,9 @@
 
 	    // mapa google
 		creaMapa();
+
+		//footerBottom
+		footerBottom();
 
 	});
 
@@ -150,7 +155,6 @@ function procesaContacto(){
 
 function mostrarMenu() {
 	$(window).resize(function(){
-		console.log($(window).width());
 		if ($(window).width() > 768)
 	   		$('.menu').attr('style', 'display: block');
 	   	else
@@ -163,7 +167,6 @@ function toggleMenuMovil(){
 
 	$('#btn-movil').on('click', function(e){
 		e.preventDefault();
-		console.log('muestra menu');
 		if($('.menu').css('display')=='none'){
 			$('.menu').slideDown('fast');
 		} else {
@@ -206,3 +209,7 @@ function creaMapa (){
 	google.maps.event.addDomListener(window, 'load', initialize);
 }
 
+function footerBottom(){
+	var alturaFooter = $('footer').height();
+	$('.container').css('padding-bottom', alturaFooter );
+}

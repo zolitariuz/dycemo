@@ -5,6 +5,8 @@
 
 	<div class="width">
 
+		<h2 class="text-center">Nosotros</h2>
+
 		<div class="caja full clearfix">
 
 			<div class="span c-6 no-medium content">
@@ -25,12 +27,9 @@
 			        }
 				?>
 
-
-
 			</div>
 
 			<div class="columna c-6 medium-10 small-12 medium-center right">
-
 				<?php the_content();  ?>
 			</div>
 
