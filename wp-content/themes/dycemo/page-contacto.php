@@ -54,6 +54,8 @@
 
 			</div>
 
+			<div class="clear"></div>
+
 			<div class="mapa-dycemo">
 				<h3>Ubicación</h3>
 				<div class="mapa" id="mapa"></div>

@@ -2,7 +2,7 @@
 
 	<div class="width clearfix">
 
-		<h2 class="text-center" >Noticias</h2>
+		<h2 class="text-center">Noticias</h2>
 
 		<?php
 

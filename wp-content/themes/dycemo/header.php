@@ -50,7 +50,7 @@
 						</a>
 					</h1>
 
-					<div class="columna right" id="btn-movil">
+					<div class="columna c-2 right" id="btn-movil">
 						<a href="#"><i class="fa fa-bars"></i></a>
 					</div>
 

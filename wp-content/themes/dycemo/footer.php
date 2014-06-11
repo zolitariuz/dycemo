@@ -6,7 +6,7 @@
 			<div class="width clearfix">
 				<div class="columna c-4 medium-12 medium-margin-bottom">
 					<p>Constuctora Dycemo S.A. de C.V.</p>
-					<p>Tel. 5668-7848</p>
+					<p><a href="tel:5668-7848">Tel. 5668-7848</a></p>
 				</div>
 				<a class="columna c-4 medium-12 medium-margin-bottom boton right" href="<?php echo site_url('contacto'); ?>">Contacto</a>
 			</div><!--Termina Footer Wrap-->

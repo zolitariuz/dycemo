@@ -82,6 +82,7 @@
 		<div class="full clearfix">
 
 			<?php
+			$counter = 1;
 			$caracteristicasArgs = array(
 				'post_type' 	=> 'en-venta',
 				'category_name'	=> 'caracteristicas'
@@ -100,9 +101,15 @@
 
 				</div><!-- columna -->
 
+				<?php if (($counter % 3) == 0) { ?>
+					<div class="clear-medium"></div>
+				<?php } ?>
 
-			<?php endwhile; endif; wp_reset_query(); ?>
+				<?php if (($counter % 3) == 0) { ?>
+					<!-- <div class="clear-medium"></div> -->
+				<?php } ?>
 
+			<?php $counter++; endwhile; endif; wp_reset_query(); ?>
 
 		</div><!-- clearfix -->
 

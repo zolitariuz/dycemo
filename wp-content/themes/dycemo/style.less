@@ -463,7 +463,6 @@ footer{ width: 100%; padding: 10px 0; background: @cafe_obscuro; position: absol
 
 	.clear-medium { clear:both; height:1px; margin:0; padding:0; font-size: 1px; line-height: 0; }
 
-
 	//Framework
 	.columna{
 
@@ -519,7 +518,7 @@ footer{ width: 100%; padding: 10px 0; background: @cafe_obscuro; position: absol
 	}
 
 
-	#btn-movil { display: block; position: absolute; top: (@margen*2); right:0 ;
+	#btn-movil { display: block; margin-top: @margen;
 		a { font-size: 3em;
 			&:hover { color: @claro; }
 		}
@@ -547,6 +546,8 @@ footer{ width: 100%; padding: 10px 0; background: @cafe_obscuro; position: absol
 }
 
 @media only screen and (max-width : 480px) {
+
+	.clear-small { clear:both; height:1px; margin:0; padding:0; font-size: 1px; line-height: 0; }
 
 	//Framework
 	.columna{

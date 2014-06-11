@@ -7,12 +7,10 @@
 		<div class="columna c-2 medium-12 escoge-botones">
 
 			<a href="#" data-seccion="plano" class="boton tabs block columna c-12 medium-3 text-center alto margin-bottom activo">Plano</a>
-
 			<a href="#" data-seccion="casa-1" class="boton tabs block columna c-12 medium-3 text-center alto margin-bottom">Casa 1</a>
-
 			<a href="#" data-seccion="casa-2" class="boton tabs block columna c-12 medium-3 text-center alto margin-bottom">Casa 2</a>
-
 			<a href="#" data-seccion="casa-3" class="boton tabs block columna c-12 medium-3 text-center alto margin-bottom">Casa 3</a>
+			<a href="#" data-seccion="casa-4" class="boton tabs block columna c-12 medium-3 text-center alto margin-bottom">Casa 4</a>
 
 		</div><!-- columna c-4 -->
 
