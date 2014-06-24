@@ -14,7 +14,7 @@
 		<?php } else { ?>
 		<footer>
 			<div class="width clearfix">
-				<a class="block columna c-4 medium-12 medium-margin-bottom boton center" href="#">Aviso de privacidad</a>
+				<a class="block columna c-4 medium-12 medium-margin-bottom boton center" target="_blank" href="<?php echo THEMEPATH; ?>aviso-de-privacidad.pdf">Aviso de privacidad</a>
 			</div><!--Termina Footer Wrap-->
 		</footer>
 		<?php } ?>
