@@ -50,7 +50,6 @@
 			</div><!-- slider -->
 
 			<div class="tab slider recorrido cerrado" data-seccion="recorrido">
-				<h2>Recorrido</h2>
 
 				<div class="fitvids">
 
@@ -72,7 +71,7 @@
 			</div><!-- recorrido -->
 
 			<div class="tab slider plano cerrado" data-seccion="plano">
-				<h2>Plano</h2>
+
 			</div><!-- plano -->
 
 		</div><!-- cotent-tabs -->

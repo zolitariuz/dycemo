@@ -31,6 +31,11 @@
 		// styles
 		wp_enqueue_style( 'styles', get_stylesheet_uri() );
 
+
+		$pageContacto = get_page_by_title('Contacto');
+		$coordenadas = get_post_meta($pageContacto->ID, '_ubicacion_meta', true);
+		wp_localize_script('functions', 'coorContacto', $coordenadas);
+
 	});
 
 
