@@ -33,6 +33,14 @@
 			add_meta_box( 'casas', 'Casas', 'metabox_casas', 'en-venta', 'normal', 'default' );
 		}
 
+		//Descripción
+		$descripcion = get_page_by_title( 'descripcion' );
+		$descripcionId = $descripcion->ID;
+
+		if ( $post_id == $descripcionId ){
+			add_meta_box( 'descripcion', 'Detalles', 'metabox_descripcion', 'post', 'normal', 'default' );
+		}
+
 	});
 
 
