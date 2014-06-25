@@ -28,17 +28,16 @@
 
 		//Casas
 		$categoria = get_the_category( $post_id );
-
 		if ($categoria[0]->cat_name == 'Casas'){
 			add_meta_box( 'casas', 'Casas', 'metabox_casas', 'en-venta', 'normal', 'default' );
 		}
 
 		//Descripción
-		$descripcion = get_page_by_title( 'descripcion' );
+		$descripcion = get_page_by_title( 'descripcion', 'OBJECT', 'en-venta' );
 		$descripcionId = $descripcion->ID;
 
 		if ( $post_id == $descripcionId ){
-			add_meta_box( 'descripcion', 'Detalles', 'metabox_descripcion', 'post', 'normal', 'default' );
+			add_meta_box( 'descripcion', 'Mapa En Venta', 'metabox_descripcion', 'en-venta', 'normal', 'default' );
 		}
 
 	});
@@ -122,6 +121,13 @@ END;
 		echo "<input type='text' class='widefat' id='casas' name='_casas_meta' value='$casas' />";
 	}
 
+	function metabox_descripcion($post){
+		$descripcion = get_post_meta($post->ID, '_descripcion_meta', true);
+		wp_nonce_field(__FILE__, '_descripcion_meta_nonce');
+		echo "<label>Ubicación: (ej. 23213,-34234)</label>";
+		echo "<input type='text' class='widefat' id='descripcion' name='_descripcion_meta' value='$descripcion' />";
+	}
+
 // SAVE METABOXES DATA ///////////////////////////////////////////////////////////////
 
 
@@ -188,6 +194,10 @@ END;
 
 		if ( isset($_POST['_casas_meta']) and check_admin_referer(__FILE__, '_casas_meta_nonce') ){
 			update_post_meta($post_id, '_casas_meta', $_POST['_casas_meta']);
+		}
+
+		if ( isset($_POST['_descripcion_meta']) and check_admin_referer(__FILE__, '_descripcion_meta_nonce') ){
+			update_post_meta($post_id, '_descripcion_meta', $_POST['_descripcion_meta']);
 		}
 
 

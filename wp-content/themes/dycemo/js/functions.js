@@ -70,7 +70,11 @@
 	    });
 
 	    // mapa google
-	    var coor = coorContacto.split(',');
+	    if(seccionActual == 'contacto') 
+	    	var coor = coorContacto.split(',');
+	    else
+	    	var coor = coorDescripcion.split(',');
+
 	    var lat = coor[0].replace(' ', '');
 	    var lng = coor[1].replace(' ', '');
 		creaMapa(lat, lng);

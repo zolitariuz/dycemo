@@ -18,14 +18,14 @@
 			<div class="columna c-6">
 
 				<h3>Ventas</h3>
-				<p>
+				<p class="tel">
 					<a href="tel:<?php echo get_post_meta($post->ID, '_ventas1_meta', true); ?>"><?php echo get_post_meta($post->ID, '_ventas1_meta', true); ?></a><br />
 					<a href="tel:<?php echo get_post_meta($post->ID, '_ventas2_meta', true); ?>"><?php echo get_post_meta($post->ID, '_ventas2_meta', true); ?></a>
 				</p>
 
 
 				<h3>Teléfonos</h3>
-				<p>
+				<p class="tel">
 					<a href="<?php echo get_post_meta($post->ID, '_telefono1_meta', true); ?>"><?php echo get_post_meta($post->ID, '_telefono1_meta', true); ?></a><br />
 					<a href="<?php echo get_post_meta($post->ID, '_telefono2_meta', true); ?>"><?php echo get_post_meta($post->ID, '_telefono2_meta', true); ?></a><br />
 				</p>
