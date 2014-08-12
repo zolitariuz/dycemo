@@ -20,7 +20,7 @@
 
 
 	add_action( 'wp_enqueue_scripts', function(){
-
+		global $post;
 		// scripts
 		wp_enqueue_script( 'plugins', JSPATH.'plugins.min.js', array('jquery'), '1.0', true );
 		wp_enqueue_script( 'functions', JSPATH.'functions.js', array('plugins'), '1.0', true );
@@ -30,6 +30,24 @@
 
 		// styles
 		wp_enqueue_style( 'styles', get_stylesheet_uri() );
+
+
+		$pageContacto = get_page_by_title('Contacto');
+		$coordenadas = get_post_meta($pageContacto->ID, '_ubicacion_meta', true);
+		wp_localize_script('functions', 'coorContacto', $coordenadas);
+ 
+		$pageDescripcion = get_page_by_title( 'descripcion', 'OBJECT', 'en-venta' );
+		$coorDesc = get_post_meta($pageDescripcion->ID, '_descripcion_meta', true);
+		wp_localize_script('functions', 'coorDescripcion', $coorDesc);
+
+		// Mandar nombre de página actual a functions.js 
+		// para renderear el mapa
+		if(get_the_title($post->ID)=='Contacto') {
+			$seccionActual = 'contacto';
+		} else {
+			$seccionActual = 'en-venta';
+		}
+		wp_localize_script('functions', 'seccionActual', $seccionActual);
 
 	});
 

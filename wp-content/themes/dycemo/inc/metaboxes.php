@@ -28,17 +28,16 @@
 
 		//Casas
 		$categoria = get_the_category( $post_id );
-
 		if ($categoria[0]->cat_name == 'Casas'){
 			add_meta_box( 'casas', 'Casas', 'metabox_casas', 'en-venta', 'normal', 'default' );
 		}
 
 		//Descripción
-		$descripcion = get_page_by_title( 'descripcion' );
+		$descripcion = get_page_by_title( 'descripcion', 'OBJECT', 'en-venta' );
 		$descripcionId = $descripcion->ID;
 
 		if ( $post_id == $descripcionId ){
-			add_meta_box( 'descripcion', 'Detalles', 'metabox_descripcion', 'post', 'normal', 'default' );
+			add_meta_box( 'descripcion', 'Mapa En Venta', 'metabox_descripcion', 'en-venta', 'normal', 'default' );
 		}
 
 	});
@@ -74,7 +73,8 @@
 		$direccion = get_post_meta($post->ID, '_direccion_meta', true);
 		$telefono1 = get_post_meta($post->ID, '_telefono1_meta', true);
 		$telefono2 = get_post_meta($post->ID, '_telefono2_meta', true);
-		$ventas = get_post_meta($post->ID, '_ventas_meta', true);
+		$ventas1 = get_post_meta($post->ID, '_ventas1_meta', true);
+		$ventas2 = get_post_meta($post->ID, '_ventas2_meta', true);
 		$horario = get_post_meta($post->ID, '_horario_meta', true);
 		$twitter = get_post_meta($post->ID, '_twitter_meta', true);
 		$facebook = get_post_meta($post->ID, '_facebook_meta', true);
@@ -83,7 +83,8 @@
 		wp_nonce_field(__FILE__, '_direccion_meta_nonce');
 		wp_nonce_field(__FILE__, '_telefono1_meta_nonce');
 		wp_nonce_field(__FILE__, '_telefono2_meta_nonce');
-		wp_nonce_field(__FILE__, '_ventas_meta_nonce');
+		wp_nonce_field(__FILE__, '_ventas1_meta_nonce');
+		wp_nonce_field(__FILE__, '_ventas2_meta_nonce');
 		wp_nonce_field(__FILE__, '_horario_meta_nonce');
 		wp_nonce_field(__FILE__, '_twitter_meta_nonce');
 		wp_nonce_field(__FILE__, '_facebook_meta_nonce');
@@ -93,12 +94,14 @@ echo <<<END
 
 	<label>Dirección:</label>
 	<textarea rows="2" class="widefat" id="direccion" name="_direccion_meta">$direccion</textarea>
-	<label>Teléfono:</label>
+	<label>Teléfono 1:</label>
 	<input type="text" class="widefat" id="telefono1" name="_telefono1_meta" value="$telefono1" />
-	<label>Teléfono:</label>
+	<label>Teléfono 2:</label>
 	<input type="text" class="widefat" id="telefono2" name="_telefono2_meta" value="$telefono2" />
-	<label>Teléfono ventas:</label>
-	<input type="text" class="widefat" id="ventas" name="_ventas_meta" value="$ventas" />
+	<label>Teléfono ventas 1:</label>
+	<input type="text" class="widefat" id="ventas" name="_ventas1_meta" value="$ventas1" />
+	<label>Teléfono ventas 2:</label>
+	<input type="text" class="widefat" id="ventas" name="_ventas2_meta" value="$ventas2" />
 	<label>Horario:</label>
 	<input type="text" class="widefat" id="horario" name="_horario_meta" value="$horario" />
 	<label>Twitter:</label>
@@ -116,6 +119,13 @@ END;
 		$casas = get_post_meta($post->ID, '_casas_meta', true);
 		wp_nonce_field(__FILE__, '_casas_meta_nonce');
 		echo "<input type='text' class='widefat' id='casas' name='_casas_meta' value='$casas' />";
+	}
+
+	function metabox_descripcion($post){
+		$descripcion = get_post_meta($post->ID, '_descripcion_meta', true);
+		wp_nonce_field(__FILE__, '_descripcion_meta_nonce');
+		echo "<label>Ubicación: (ej. 23213,-34234)</label>";
+		echo "<input type='text' class='widefat' id='descripcion' name='_descripcion_meta' value='$descripcion' />";
 	}
 
 // SAVE METABOXES DATA ///////////////////////////////////////////////////////////////
@@ -158,8 +168,12 @@ END;
 			update_post_meta($post_id, '_telefono2_meta', $_POST['_telefono2_meta']);
 		}
 
-		if ( isset($_POST['_ventas_meta']) and check_admin_referer(__FILE__, '_ventas_meta_nonce') ){
-			update_post_meta($post_id, '_ventas_meta', $_POST['_ventas_meta']);
+		if ( isset($_POST['_ventas1_meta']) and check_admin_referer(__FILE__, '_ventas2_meta_nonce') ){
+			update_post_meta($post_id, '_ventas1_meta', $_POST['_ventas1_meta']);
+		}
+
+		if ( isset($_POST['_ventas2_meta']) and check_admin_referer(__FILE__, '_ventas2_meta_nonce') ){
+			update_post_meta($post_id, '_ventas2_meta', $_POST['_ventas2_meta']);
 		}
 
 		if ( isset($_POST['_horario_meta']) and check_admin_referer(__FILE__, '_horario_meta_nonce') ){
@@ -180,6 +194,10 @@ END;
 
 		if ( isset($_POST['_casas_meta']) and check_admin_referer(__FILE__, '_casas_meta_nonce') ){
 			update_post_meta($post_id, '_casas_meta', $_POST['_casas_meta']);
+		}
+
+		if ( isset($_POST['_descripcion_meta']) and check_admin_referer(__FILE__, '_descripcion_meta_nonce') ){
+			update_post_meta($post_id, '_descripcion_meta', $_POST['_descripcion_meta']);
 		}
 
 

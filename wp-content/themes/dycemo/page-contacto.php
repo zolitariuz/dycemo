@@ -18,12 +18,16 @@
 			<div class="columna c-6">
 
 				<h3>Ventas</h3>
-				<p><?php echo get_post_meta($post->ID, '_ventas_meta', true); ?></p>
+				<p class="tel">
+					<a href="tel:<?php echo get_post_meta($post->ID, '_ventas1_meta', true); ?>"><?php echo get_post_meta($post->ID, '_ventas1_meta', true); ?></a><br />
+					<a href="tel:<?php echo get_post_meta($post->ID, '_ventas2_meta', true); ?>"><?php echo get_post_meta($post->ID, '_ventas2_meta', true); ?></a>
+				</p>
+
 
 				<h3>Teléfonos</h3>
-				<p>
-					<?php echo get_post_meta($post->ID, '_telefono1_meta', true); ?><br />
-					<?php echo get_post_meta($post->ID, '_telefono2_meta', true); ?><br />
+				<p class="tel">
+					<a href="<?php echo get_post_meta($post->ID, '_telefono1_meta', true); ?>"><?php echo get_post_meta($post->ID, '_telefono1_meta', true); ?></a><br />
+					<a href="<?php echo get_post_meta($post->ID, '_telefono2_meta', true); ?>"><?php echo get_post_meta($post->ID, '_telefono2_meta', true); ?></a><br />
 				</p>
 
 				<h3>Horario de atención</h3>
@@ -58,6 +62,7 @@
 
 			<div class="mapa-dycemo">
 				<h3>Ubicación</h3>
+
 				<div class="mapa" id="mapa"></div>
 			</div><!-- caja mapa-dycemo -->
 
