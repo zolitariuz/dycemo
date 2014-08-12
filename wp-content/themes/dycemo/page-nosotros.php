@@ -96,9 +96,9 @@
 
 				<h3 class="text-center">Haz una cita</h3>
 
-				<input type="text" name="nombre" value="Nombre">
-				<input type="email" name="email" value="E-mail">
-				<input type="tel" name="celular" value="Celular">
+				<input class="required" type="text" id="nombre" name="nombre" placeholder="Nombre">
+				<input class="required email" type="email" name="email" placeholder="E-mail">
+				<input class="required" type="tel" name="celular" placeholder="Celular">
 
 				<input class="left" name="agendar" type="checkbox">
 				<label class="left" for="agendar">Quiero agendar una cita</label>
