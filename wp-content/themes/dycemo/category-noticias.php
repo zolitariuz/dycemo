@@ -39,8 +39,6 @@
 
 		</form><!-- forma-cita -->
 
-
 	</div><!-- width -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

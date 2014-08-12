@@ -70,14 +70,18 @@
 	    });
 
 	    // mapa google
-	    if(seccionActual == 'contacto') 
+	    if(seccionActual == 'contacto'){
 	    	var coor = coorContacto.split(',');
-	    else
+		    var lat = coor[0].replace(' ', '');
+		    var lng = coor[1].replace(' ', '');
+			creaMapa(lat, lng);
+	   } else if(seccionActual == 'en-venta'){
+	    	console.log(coorDescripcion);
 	    	var coor = coorDescripcion.split(',');
-
-	    var lat = coor[0].replace(' ', '');
-	    var lng = coor[1].replace(' ', '');
-		creaMapa(lat, lng);
+	    	var lat = coor[0].replace(' ', '');
+	    	var lng = coor[1].replace(' ', '');
+			creaMapa(lat, lng);
+	    }
 
 		//footerBottom
 		footerBottom();

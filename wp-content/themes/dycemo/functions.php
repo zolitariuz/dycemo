@@ -34,17 +34,20 @@
 		$pageContacto = get_page_by_title('Contacto');
 		$coordenadas = get_post_meta($pageContacto->ID, '_ubicacion_meta', true);
 		wp_localize_script('functions', 'coorContacto', $coordenadas);
- 
+
 		$pageDescripcion = get_page_by_title( 'descripcion', 'OBJECT', 'en-venta' );
 		$coorDesc = get_post_meta($pageDescripcion->ID, '_descripcion_meta', true);
 		wp_localize_script('functions', 'coorDescripcion', $coorDesc);
 
-		// Mandar nombre de página actual a functions.js 
+
+		// Mandar nombre de página actual a functions.js
 		// para renderear el mapa
 		if(get_the_title($post->ID)=='Contacto') {
 			$seccionActual = 'contacto';
-		} else {
+		} else if ( get_post_type($post->ID)=='en-venta') {
 			$seccionActual = 'en-venta';
+		} else {
+			$seccionActual = '';
 		}
 		wp_localize_script('functions', 'seccionActual', $seccionActual);
 
