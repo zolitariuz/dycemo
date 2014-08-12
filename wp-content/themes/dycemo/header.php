@@ -19,10 +19,9 @@
 		<!--Font Awesome-->
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-
-
 		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 		<?php wp_head(); ?>
+
 	</head>
 
 	<body>
