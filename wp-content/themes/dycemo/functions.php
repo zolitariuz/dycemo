@@ -31,7 +31,6 @@
 		// styles
 		wp_enqueue_style( 'styles', get_stylesheet_uri() );
 
-
 		$pageContacto = get_page_by_title('Contacto');
 		$coordenadas = get_post_meta($pageContacto->ID, '_ubicacion_meta', true);
 		wp_localize_script('functions', 'coorContacto', $coordenadas);
@@ -278,7 +277,7 @@
 
 		$to = 'ventas@dycemo.com';
 		$subject = $nombre.' quiere agendar una cita';
-		$headers = 'From: My Name <miguel@pcuervo.com>' . "\r\n";
+		$headers = 'From: My Name <ventas@dycemo.com>' . "\r\n";
 		$message = '<html><body>';
 		$message .= '<h1>Agendar una cita</h1>';
 		$message .= '<p>'.$nombre.' quiere agendar una cita para el día "'.$fecha.'"</p>';
@@ -307,9 +306,9 @@
 		$celular = $_POST['celular'];
 		$mensaje = $_POST['mensaje'];
 
-		$to = 'miguel@pcuervo.com';
+		$to = 'ventas@dycemo.com';
 		$subject = $nombre.' te ha contactado';
-		$headers = 'From: My Name <miguel@pcuervo.com>' . "\r\n";
+		$headers = 'From: My Name <ventas@dycemo.com>' . "\r\n";
 		$message = '<html><body>';
 		$message .= '<h1>Contacto dycemo</h1>';
 		$message .= '<p>'.$nombre.' ha escrito "'.$mensaje.'"</p>';

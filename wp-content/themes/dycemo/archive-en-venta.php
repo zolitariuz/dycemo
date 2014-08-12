@@ -12,7 +12,7 @@
 			<span>Recorrido virtual</span>
 		</a>
 
-		<a class="boton tabs alto columna c-4" data-seccion="plano" href="#">
+		<a class="boton alto columna c-4" data-seccion="plano" href="http://dycemo.com/ivisit" target="_blank">
 			<span>Plano interactivo</span>
 		</a>
 
@@ -145,9 +145,9 @@
 
 				<h3 class="texto-centrado">Haz una cita</h3>
 
-				<input class="required" type="text" id="nombre" name="nombre" value="Nombre">
-				<input class="required email" type="email" name="email" value="E-mail">
-				<input class="required" type="tel" name="celular" value="Celular">
+				<input class="required" type="text" id="nombre" name="nombre" placeholder="Nombre">
+				<input class="required email" type="email" name="email" placeholder="E-mail">
+				<input class="required" type="tel" name="celular" placeholder="Celular">
 
 				<input class="left" name="agendar" type="checkbox">
 				<label class="left" for="agendar">Quiero agendar una cita</label>
